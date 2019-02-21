@@ -1,11 +1,13 @@
-**Perceptron**  
-env: Python 2.7
+JVS Need to tidy this up ...
 
-fork from http://glowingpython.blogspot.com/2011/10/perceptron.html  
+**Perceptron**  
+env: Python 2.7, upgraded to 3.5 by JVS.
+
+Original source from http://glowingpython.blogspot.com/2011/10/perceptron.html  
 using Rosenblatt training algorithm(http://lcn.epfl.ch/tutorial/english/perceptron/html/learning.html)
 
-JVS from
+JVS downloaded code hee from
 
 https://gist.github.com/Thomascountz/3ae80451358a80b29ed802978cbe3f78
 
-Thomascountz
+Thomas Countz
