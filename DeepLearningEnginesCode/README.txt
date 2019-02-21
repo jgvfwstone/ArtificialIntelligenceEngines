@@ -1,9 +1,12 @@
+THIS IS A DRAFT
+
 2/2/2018 James V Stone
 
 
 Code Examples Listed in Deep Learning Engines Book
 ===========================================
-The online code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
+
+The online code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
 
 A particularly insightful PyTorch tutorial can be found here:
 	https://pytorch.org/tutorials/beginner/nn_tutorial.html
@@ -18,7 +21,8 @@ The following is a list of online examples at
 
 —
 
-Network: Linear Associative NetworkGithub files: Ch02_LinearNetwork
+Network: Linear Associative Network
+Github files: Ch02_LinearNetwork
 Author: 
 Date created: 
 Original Source:: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
@@ -34,7 +38,8 @@ TTD Write code!
 
 Network: Perceptron 
 Github files: Ch03_Perceptron/test.py
-Original Source: https://github.com/Honghe/perceptron/tree/master/perceptronAuthor: Honghe??
+Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
+Author: Honghe??
 Date created: 2013
 License: None (ask permission)
 Email: leopardsaga@gmail.com
@@ -69,7 +74,9 @@ TTD
 —
 
 Network: Boltzmann machine
-Github files: Original Source::Github files: 
+Github files: 
+Original Source::
+Github files: 
 Author: 
 Date created: 
 License: 
@@ -79,7 +86,8 @@ TTD
 
 —
 
-Network: Restricted Boltzmann MachinesGithub files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
+Network: Restricted Boltzmann Machines
+Github files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
 Author: Gabriel Bianconi 
 Date created: 2017
 License: MIT License
@@ -106,7 +114,8 @@ TTD
 
 —
 
-Network: Reinforcement learningGithub files: Ch10_ReinforcementLearning/reinforcement_q_learning.py
+Network: Reinforcement learning
+Github files: Ch10_ReinforcementLearning/reinforcement_q_learning.py
 Author: Adam Paszke (adam.paszke@gmail.com)
 Date created: 2017.
 License: MIT
