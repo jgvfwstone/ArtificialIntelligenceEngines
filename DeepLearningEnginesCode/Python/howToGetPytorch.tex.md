@@ -122,4 +122,4 @@ or from Jupyter Lab, find the menu item
 
 and download to file *.py.
 
-
+Finally, to make latex look good in github see https://github.com/apps/texify
