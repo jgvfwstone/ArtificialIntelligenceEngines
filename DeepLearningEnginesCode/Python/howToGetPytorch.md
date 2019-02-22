@@ -75,7 +75,7 @@ To install scikit-learn do
 To make sure the files get put in the right place (ie in anaconda's domain), 
 you may need to ensure you are using the pip that is part of anaconda:
 
-\$ cd /Users/JimStone/anaconda3/bin
+<img src="/DeepLearningEnginesCode/Python/tex/dc5d51913f93ee3838bcf37504118959.svg?invert_in_darkmode&sanitize=true" align=middle width=346.8772295999999pt height=80.73058620000002pt/> cd /Users/JimStone/anaconda3/bin
 
 \$ ./pip install gym
 
@@ -117,4 +117,4 @@ or from Jupyter Lab, find the menu item
 
 and download to file *.py.
 
-
+Finally, to make latex look good in github see https://github.com/apps/texify
