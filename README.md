@@ -21,6 +21,6 @@ However, to download a single file
 
 How To ...
 ===========
-There are help files within individual directories:
+There is help file within each directory, for example:
 
     DeepLearningEnginesCode/Python/howToGetPytorch.tex.md
