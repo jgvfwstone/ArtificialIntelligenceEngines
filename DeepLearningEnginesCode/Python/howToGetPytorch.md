@@ -117,6 +117,8 @@ or from Jupyter Lab, find the menu item
 
 and download to file *.py.
 
-If you want a solid book on scientific python then get this book Learnin Scientific Programming With Python by C Hill.
+If you want a solid book on scientific python then get this book: 
+
+Learning Scientific Programming With Python by C Hill.
 
 Finally, to make latex look good in github see https://github.com/apps/texify
