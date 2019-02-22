@@ -71,6 +71,7 @@ $ which pip
 Do this by running anaconda's pip, for example:
 
 $ cd /Users/JimStone/anaconda3/bin
+
 $ ./pip install gym
 
 Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
