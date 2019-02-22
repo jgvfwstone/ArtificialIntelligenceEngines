@@ -1,9 +1,9 @@
 
+Open the file howToGetPytorch.md to see latex rendered properly (e.g. $y=mx$).
+
 Note: I am not expert in installing software. The text below is intended as a general guide, based on my own experience with Python. The book Deep Learning Engines is mainly about the mathematics of neural networks, so this code is really an added extra. However, if you spot any errors here then please let me know. 
 
 My own machine is a mac, so most information refers to Python on macs.
-
-$y=mx$
 
 Installing Python on a PC
 =================
