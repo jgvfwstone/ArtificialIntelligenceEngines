@@ -23,14 +23,12 @@ The following is a list of online examples at
 
 * Network: Linear Associative Network
 * Github files: Ch02_LinearNetwork
-
-*Author: 
-*Date created: 
-
-Original Source:: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
-License: 
-Description: 
-Network: Linear network using gradient descent to learn 1 association Linear network using gradient descent to learn 2 associations Linear network using gradient descent to learn photographs 
+* Author: 
+* Date created: 
+* Original Source:: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
+* License: 
+* Description: 
+* Network: Linear network using gradient descent to learn 1 association Linear network using gradient descent to learn 2 associations Linear network using gradient descent to learn photographs 
 For linear network start with two_layer_net_nn.py
 in /Users/JimStone/Documents/GitHub/DNNStoneBookCode/Python/PyTorchCode/tutorials
 
@@ -38,14 +36,14 @@ TTD Write code!
 
 —
 
-Network: Perceptron 
-Github files: Ch03_Perceptron/test.py
-Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
-Author: Honghe??
-Date created: 2013
-License: None (ask permission)
-Email: leopardsaga@gmail.com
-Description: Gives nice graph.
+* Network: Perceptron 
+* Github files: Ch03_Perceptron/test.py
+* Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
+* Author: Honghe??
+* Date created: 2013
+* License: None (ask permission)
+* Email: leopardsaga@gmail.com
+* Description: Gives nice graph.
 
 TTD Ask permission.
 
