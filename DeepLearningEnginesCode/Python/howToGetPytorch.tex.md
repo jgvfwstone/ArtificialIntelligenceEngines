@@ -48,12 +48,12 @@ Installing Pytorch
 
 Install modules pytorch and torchvision:
 
-$ conda install pytorch torchvision -c pytorch
+\$ conda install pytorch torchvision -c pytorch
 (The -c tells conda to look in pytorch online)
 
 Other usefull commands:
 
-$ conda list
+\$ conda list
 
 $ conda info
 
