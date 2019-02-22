@@ -21,8 +21,10 @@ The following is a list of online examples at
 
 —
 
-Network: Linear Associative Network\\
-Github files: Ch02_LinearNetwork\\
+Network: Linear Associative Network
+
+Github files: Ch02_LinearNetwork
+
 Author: 
 Date created: 
 Original Source:: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
