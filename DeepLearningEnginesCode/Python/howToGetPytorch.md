@@ -21,30 +21,70 @@ https://www.anaconda.com/distribution/
 
 To find out where the default version of python is stored, type this to unix shell:
 
-<img src="/DeepLearningEnginesCode/Python/tex/4b09e1c80baeb7726ec2a0c26bc0f7c6.svg?invert_in_darkmode&sanitize=true" align=middle width=700.5028387499999pt height=633.0593544pt/> conda install pytorch torchvision -c pytorch
+\$ which python3
+
+/Users/JimStone/anaconda3/bin/python3
+
+Or, to download the basic Python language go to:
+
+https://www.python.org/
+
+Assuming you have Anaconda, it offers various programs to use with Python, including Python Notebooks.
+I use the IPython application called Spyder which can be launched from within Anaconda.
+
+In order to use standard neural network packages, you need to install (usually just one) software platforms:
+
+Pytorch (owned by Facebook)
+
+scikit-learn (funded by various public bodies)
+
+TensorFlow (owned by Google)
+
+Most examples in this book rely on Pytorch.
+Both Pytorch and scikit-learn allow fairly easy access to the underlying Python code.
+
+Installing Pytorch
+=================
+
+Install modules pytorch and torchvision:
+
+\$ conda install pytorch torchvision -c pytorch
 (The -c tells conda to look in pytorch online)
 
 Other usefull commands:
 
 \$ conda list
 
-<img src="/DeepLearningEnginesCode/Python/tex/aed827aaffba4b207537cec436f2447d.svg?invert_in_darkmode&sanitize=true" align=middle width=558.4490175pt height=164.20092150000002pt/> pip install gym
+\$ conda info
+
+Installing Modules Using pip
+=======================
+
+For some reason conda cannot find all modules, so use pip for those. 
+
+To use some graphical examples involving computer games you will need gym:
+
+Install gym into anaconda package
+
+\$ pip install gym
 
 To install scikit-learn do
 
-<img src="/DeepLearningEnginesCode/Python/tex/ccc47f81c25f969de60a446f1e4439cc.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2744836999999pt height=85.29681270000002pt/> which pip
-/Users/JimStone/anaconda3/bin/pip
+\$ pip install sklearn
 
-Do this by running anaconda's pip, for example:
+To make sure the files get put in the right place (ie in anaconda's domain), 
+you may need to ensure you are using the pip that is part of anaconda:
 
-<img src="/DeepLearningEnginesCode/Python/tex/48bed7afb24ae234d519a74f1c4c036e.svg?invert_in_darkmode&sanitize=true" align=middle width=265.98896114999997pt height=24.65753399999998pt/> ./pip install gym
+<img src="/DeepLearningEnginesCode/Python/tex/dc5d51913f93ee3838bcf37504118959.svg?invert_in_darkmode&sanitize=true" align=middle width=346.8772295999999pt height=80.73058620000002pt/> cd /Users/JimStone/anaconda3/bin
+
+\$ ./pip install gym
 
 Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
 etc
 
 If you need to tell pip where to put downloaded files then use the -t flag:
 
-$ pip3 -t, --target adirectory
+\$ pip3 -t, --target adirectory
 
 Python, IPython, Notebooks and Jupyter Labs
 =================
