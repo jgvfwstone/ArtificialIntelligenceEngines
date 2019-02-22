@@ -1,7 +1,7 @@
 # DeepLearningEngines
 Computer code collated from various sources for use with the book: 
     
-      Deep Learning Engines book 
+      Deep Learning Engines  
       by James V Stone
 
 http://jim-stone.staff.shef.ac.uk/DeepLearning/DeepLearningMain.html
