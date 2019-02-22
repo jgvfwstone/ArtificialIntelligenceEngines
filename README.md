@@ -14,4 +14,7 @@ All code in this repository has been reproduced with permission from the authors
 Downloading Single Files
 ========================
 Github normally insists you download the whole repository.
-However, to download a single file, go to the file so you can see it in the github user interface and click on the RAW button in the upper right, then use the browser "save as ..." menu to save the file to your computer. 
+However, to download a single file
+1) go to the file so you can see it in the github user interface 
+2) click on the RAW button in the upper right
+3) use the browser "save as ..." menu to save the file to your computer. 
