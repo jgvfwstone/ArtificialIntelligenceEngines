@@ -23,6 +23,4 @@ How To ...
 ===========
 There are help files within individual directories:
 
-    DeepLearningEnginesCode/Python/howToGetPython.txt
-    
-    DeepLearningEnginesCode/Python/howToInstallPythonPackages.txt
+    DeepLearningEnginesCode/Python/howToGetPytorch.tex.md
