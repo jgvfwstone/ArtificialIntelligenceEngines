@@ -53,18 +53,38 @@ $ pip3 install sklearn
 
 Installing Pytorch
 =================
+
+Install modules pytorch and torchvision:
+
+$ conda install pytorch torchvision -c pytorch
+(The -c tells conda to look in pytorch online)
+
+Other usefull commands:
+
+$ conda list
+
+$ conda info
+ 
 Installing Modules
 ==============
 
-Install modules pytorch and torchvision:
-$ anaconda/bin/conda install pytorch torchvision -c pytorch
-The -c tells conda to look under pytorch online
+Install gym into anaconda package
 
-Install gym into anaconda package directly??????
-$ cd PATH  /anaconda3/bin
-Use  pip from within anaconda’s own directory to install packages in correct place:
+$ pip install gym
+
+To make sure the files get put in the right place (ie in anaconda's domain), 
+you may need to ensure you are using the pip that is part of anaconda:
+
+$ which pip
+/Users/JimStone/anaconda3/bin/pip
+
+Do this by running anaconda's pip, for example:
+
+$ cd /Users/JimStone/anaconda3/bin
 $ ./pip install gym
 
+Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
+etc
 
 Saving Notebook as Python  Code
 ===========================
