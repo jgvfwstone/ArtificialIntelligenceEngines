@@ -1,9 +1,9 @@
 
+Open the file howToGetPytorch.md to see latex rendered properly (e.g. <img src="/DeepLearningEnginesCode/Python/tex/1cbdf1c3ec380d9a41eb881ea74212cb.svg?invert_in_darkmode&sanitize=true" align=middle width=54.39492464999999pt height=14.15524440000002pt/>).
+
 Note: I am not expert in installing software. The text below is intended as a general guide, based on my own experience with Python. The book Deep Learning Engines is mainly about the mathematics of neural networks, so this code is really an added extra. However, if you spot any errors here then please let me know. 
 
 My own machine is a mac, so most information refers to Python on macs.
-
-<img src="/DeepLearningEnginesCode/Python/tex/1cbdf1c3ec380d9a41eb881ea74212cb.svg?invert_in_darkmode&sanitize=true" align=middle width=54.39492464999999pt height=14.15524440000002pt/>
 
 Installing Python on a PC
 =================
