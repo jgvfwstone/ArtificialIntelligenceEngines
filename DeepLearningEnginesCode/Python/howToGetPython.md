@@ -1,4 +1,6 @@
 
+Warning: I am not expert in installing software. The text below is intended as a general guide, based on my own experience with Python. The book Deep Learning Engines is mainly about the mathematics of neural networks, so this code is really an added extra. However, if you spot any errors here then please let me know.
+
 Installing Python
 =================
 
