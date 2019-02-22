@@ -21,30 +21,30 @@ https://www.anaconda.com/distribution/
 
 To find out where the default version of python is stored, type this to unix shell:
 
-<img src="/DeepLearningEnginesCode/Python/tex/24be74da2f8b6c84350a80f0f0aea3c4.svg?invert_in_darkmode&sanitize=true" align=middle width=700.5028387499999pt height=598.1735232000001pt/> conda install pytorch torchvision -c pytorch
+<img src="/DeepLearningEnginesCode/Python/tex/4b09e1c80baeb7726ec2a0c26bc0f7c6.svg?invert_in_darkmode&sanitize=true" align=middle width=700.5028387499999pt height=633.0593544pt/> conda install pytorch torchvision -c pytorch
 (The -c tells conda to look in pytorch online)
 
 Other usefull commands:
 
-<img src="/DeepLearningEnginesCode/Python/tex/8eb8508fe6faf08a760f0850ee76fc03.svg?invert_in_darkmode&sanitize=true" align=middle width=66.72699659999998pt height=22.831056599999986pt/> conda info
+\$ conda list
 
-Installing Modules Using pip
-=======================
+<img src="/DeepLearningEnginesCode/Python/tex/aed827aaffba4b207537cec436f2447d.svg?invert_in_darkmode&sanitize=true" align=middle width=558.4490175pt height=164.20092150000002pt/> pip install gym
 
-For some reason conda cannot find all modules, so use pip for those. 
+To install scikit-learn do
 
-To use some graphical examples involving computer games you will need gym:
+<img src="/DeepLearningEnginesCode/Python/tex/ccc47f81c25f969de60a446f1e4439cc.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2744836999999pt height=85.29681270000002pt/> which pip
+/Users/JimStone/anaconda3/bin/pip
 
-Install gym into anaconda package
+Do this by running anaconda's pip, for example:
 
-<img src="/DeepLearningEnginesCode/Python/tex/68b61e54061c3878c30181b9458cd6ef.svg?invert_in_darkmode&sanitize=true" align=middle width=167.3520486pt height=39.45205440000001pt/> pip install sklearn
+<img src="/DeepLearningEnginesCode/Python/tex/48bed7afb24ae234d519a74f1c4c036e.svg?invert_in_darkmode&sanitize=true" align=middle width=265.98896114999997pt height=24.65753399999998pt/> ./pip install gym
 
-To make sure the files get put in the right place (ie in anaconda's domain), 
-you may need to ensure you are using the pip that is part of anaconda:
+Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
+etc
 
-<img src="/DeepLearningEnginesCode/Python/tex/b1a0230d1f59a2608a513b0f56650ee3.svg?invert_in_darkmode&sanitize=true" align=middle width=346.8772295999999pt height=45.84475500000001pt/> cd /Users/JimStone/anaconda3/bin
+If you need to tell pip where to put downloaded files then use the -t flag:
 
-<img src="/DeepLearningEnginesCode/Python/tex/3e335f12ff462788f309ddef63e7ae01.svg?invert_in_darkmode&sanitize=true" align=middle width=709.36281075pt height=124.74886710000001pt/> pip3 -t, --target adirectory
+$ pip3 -t, --target adirectory
 
 Python, IPython, Notebooks and Jupyter Labs
 =================
