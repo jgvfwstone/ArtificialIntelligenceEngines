@@ -79,7 +79,7 @@ etc
 
 If you need to tell pip where to put downloaded files then use the -t flag:
 
-$ pip3 -t, --target <dir>          Install packages into <dir>. 
+$ pip3 -t, --target adirectory
 
 Saving Notebook as Python  Code
 ===========================
