@@ -4,6 +4,10 @@ Note: I am not expert in installing software. The text below is intended as a ge
 Installing Python
 =================
 
+$a=b$
+
+{\em i am}
+
 The simplest and most complete Python can be downloaded from Anaconda:
 
 https://www.anaconda.com/distribution/
