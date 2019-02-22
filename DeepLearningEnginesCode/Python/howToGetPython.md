@@ -53,11 +53,13 @@ For some reason conda cannot find all modules, so use pip for those.
 
 To use some graphical examples involving computer games you will need gym:
 
-$ pip install sklearn
-
 Install gym into anaconda package
 
 $ pip install gym
+
+To install scikit-learn do
+
+$ pip install sklearn
 
 To make sure the files get put in the right place (ie in anaconda's domain), 
 you may need to ensure you are using the pip that is part of anaconda:
