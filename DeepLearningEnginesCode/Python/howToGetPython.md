@@ -29,28 +29,6 @@ TensorFlow (owned by Google)
 Most examples in this book rely on Pytorch.
 Both Pytorch and scikit-learn allow fairly easy access to the underlying Python code.
 
-Installing Modules
-==============
-
-Install modules pytorch and torchvision:
-
-$ anaconda/bin/conda install pytorch torchvision -c pytorch
-(The -c tells conda to look under pytorch online).
-
-To use some graphical examples involving computer games you will need gym:
-
-$ cd PATH  /anaconda3/bin
-Use  pip from within anaconda’s own directory to install packages in correct place:
-$ conda install gym
-
-If you need to tell pip where to put downloaded files then use the -t flag:
- pip3 -t, --target <dir>          Install packages into <dir>. 
-
-$ pip3 install sklearn
-
-
-
-
 Installing Pytorch
 =================
 
@@ -64,9 +42,16 @@ Other usefull commands:
 $ conda list
 
 $ conda info
+
  
-Installing Modules
-==============
+Installing Modules Using pip
+=======================
+
+For some reason conda cannot find all modules, so use pip for those. 
+
+To use some graphical examples involving computer games you will need gym:
+
+$ pip install sklearn
 
 Install gym into anaconda package
 
@@ -86,16 +71,24 @@ $ ./pip install gym
 Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
 etc
 
+If you need to tell pip where to put downloaded files then use the -t flag:
+
+$ pip3 -t, --target <dir>          Install packages into <dir>. 
+
 Saving Notebook as Python  Code
 ===========================
 
 Sometimes an online example is presented as a Jupyter Notebook or Jupyter Lab.
 You can save the Python code to run within a Python application (e.g. Spyder).
 
-From within Anaconda’s Jupyter Notebook, find the menu item;
+From within Anaconda’s Jupyter Notebook, find the menu item:
+
 	Download as …
+
 or from Jupyter Lab, find the menu item
+
 	Export Notebook as …
+
 and download to file *.py.
 
 
