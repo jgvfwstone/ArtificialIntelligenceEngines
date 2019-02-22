@@ -3,6 +3,8 @@ Note: I am not expert in installing software. The text below is intended as a ge
 
 My own machine is a mac, so most information refers to Python on macs.
 
+$y=mx$
+
 Installing Python on a PC
 =================
 
