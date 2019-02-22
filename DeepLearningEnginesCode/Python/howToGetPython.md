@@ -22,19 +22,31 @@ In order to use standard neural network packages, you need to install (usually j
 
 Pytorch (owned by Facebook)
 
+scikit-learn (funded by various public bodies)
+
 TensorFlow (owned by Google)
+
+Most examples in this book rely on Pytorch.
+Both Pytorch and scikit-learn allow fairly easy access to the underlying Python code.
 
 Installing Modules
 ==============
 
 Install modules pytorch and torchvision:
-$ anaconda/bin/conda install pytorch torchvision -c pytorch
-The -c tells conda to look under pytorch online
 
-Install gym into anaconda package directly??????
+$ anaconda/bin/conda install pytorch torchvision -c pytorch
+(The -c tells conda to look under pytorch online).
+
+To use some graphical examples involving computer games you will need gym:
+
 $ cd PATH  /anaconda3/bin
 Use  pip from within anaconda’s own directory to install packages in correct place:
-$ ./pip install gym
+$ conda install gym
+
+If you need to tell pip where to put downloaded files then use the -t flag:
+ pip3 -t, --target <dir>          Install packages into <dir>. 
+
+$ pip3 install sklearn
 
 
 
