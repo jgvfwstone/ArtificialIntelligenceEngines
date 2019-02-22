@@ -18,3 +18,9 @@ However, to download a single file
 1) go to the file so you can see it in the github user interface 
 2) click on the RAW button in the upper right
 3) use the browser "save as ..." menu to save the file to your computer. 
+
+How To ...
+===========
+There are help files within individual directories:
+    DeepLearningEnginesCode/Python/howToGetPython.txt
+    DeepLearningEnginesCode/Python/howToInstallPythonPackages.txt
