@@ -22,5 +22,7 @@ However, to download a single file
 How To ...
 ===========
 There are help files within individual directories:
+
     DeepLearningEnginesCode/Python/howToGetPython.txt
+    
     DeepLearningEnginesCode/Python/howToInstallPythonPackages.txt
