@@ -18,10 +18,41 @@ https://www.python.org/
 Assuming you have Anaconda, it offers various programs to use with Python, including Python Notebooks.
 I use the IPython application called Spyder which can be launched from within Anaconda.
 
-In order to use standard neural network packages, you need to install speciifc packages:
+In order to use standard neural network packages, you need to install (usually just one) software platforms:
+
+Pytorch (owned by Facebook)
+
+TensorFlow (owned by Google)
+
+Installing Modules
+==============
+
+Install modules pytorch and torchvision:
+$ anaconda/bin/conda install pytorch torchvision -c pytorch
+The -c tells conda to look under pytorch online
+
+Install gym into anaconda package directly??????
+$ cd PATH  /anaconda3/bin
+Use  pip from within anaconda’s own directory to install packages in correct place:
+$ ./pip install gym
+
+
+
 
 Installing Pytorch
 =================
+Installing Modules
+==============
+
+Install modules pytorch and torchvision:
+$ anaconda/bin/conda install pytorch torchvision -c pytorch
+The -c tells conda to look under pytorch online
+
+Install gym into anaconda package directly??????
+$ cd PATH  /anaconda3/bin
+Use  pip from within anaconda’s own directory to install packages in correct place:
+$ ./pip install gym
+
 
 Saving Notebook as Python  Code
 ===========================
