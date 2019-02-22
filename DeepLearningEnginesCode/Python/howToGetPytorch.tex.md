@@ -21,7 +21,7 @@ https://www.anaconda.com/distribution/
 
 To find out where the default version of python is stored, type this to unix shell:
 
-$ which python3
+\$ which python3
 
 /Users/JimStone/anaconda3/bin/python3
 
@@ -55,7 +55,7 @@ Other usefull commands:
 
 \$ conda list
 
-$ conda info
+\$ conda info
 
 Installing Modules Using pip
 =======================
@@ -66,11 +66,11 @@ To use some graphical examples involving computer games you will need gym:
 
 Install gym into anaconda package
 
-$ pip install gym
+\$ pip install gym
 
 To install scikit-learn do
 
-$ pip install sklearn
+\$ pip install sklearn
 
 To make sure the files get put in the right place (ie in anaconda's domain), 
 you may need to ensure you are using the pip that is part of anaconda:
@@ -80,16 +80,16 @@ $ which pip
 
 Do this by running anaconda's pip, for example:
 
-$ cd /Users/JimStone/anaconda3/bin
+\$ cd /Users/JimStone/anaconda3/bin
 
-$ ./pip install gym
+\$ ./pip install gym
 
 Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
 etc
 
 If you need to tell pip where to put downloaded files then use the -t flag:
 
-$ pip3 -t, --target adirectory
+\$ pip3 -t, --target adirectory
 
 Python, IPython, Notebooks and Jupyter Labs
 =================
