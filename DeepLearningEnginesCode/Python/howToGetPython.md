@@ -4,6 +4,10 @@ Note: I am not expert in installing software. The text below is intended as a ge
 Installing Python
 =================
 
+<img src="/DeepLearningEnginesCode/Python/tex/8fd5bb0eeaa8887f6a312c99359a3b93.svg?invert_in_darkmode&sanitize=true" align=middle width=37.66158164999999pt height=22.831056599999986pt/>
+
+{\em i am}
+
 The simplest and most complete Python can be downloaded from Anaconda:
 
 https://www.anaconda.com/distribution/
