@@ -1,4 +1,25 @@
 
+Installing Python
+=================
+
+To find out where the default version of python is stored:
+
+$ which python3 # text after a hash is ignored
+/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+
+Python version:  python3.7.2
+
+Installation: Basic python interface (IDLE), 
+
+Either:
+
+Warned not to use pip, or to use conda’s pip
+$ pip install python 
+
+or download from:
+
+https://www.python.org/
+
 Saving Notebook as Python  Code
 ===========================
 
@@ -46,23 +67,4 @@ $ cd pytorch_code
 $ git clone https://github.com/pytorch/examples.git
 This creates a directory called pytorch_code/examples, which contains:
 
-Installing Python
-—————————————
 
-To find out where the default version of python is stored:
-
-$ which python3 # text after a hash is ignored
-/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
-
-Python version:  python3.7.2
-
-Installation: Basic python interface (IDLE), 
-
-Either:
-
-Warned not to use pip, or to use conda’s pip
-$ pip install python 
-
-or download from:
-
-https://www.python.org/
