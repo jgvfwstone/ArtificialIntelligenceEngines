@@ -1,4 +1,4 @@
-**Chapter 4: The Backpropagation Algorithm**
+# Chapter 4: The Backpropagation Algorithm
 
 Run code using main.py.
 
