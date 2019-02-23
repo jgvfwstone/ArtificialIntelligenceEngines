@@ -87,6 +87,7 @@ TTD
 —
 
 **Restricted Boltzmann Machines**
+* Github files: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 * Github files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
 * Author: Gabriel Bianconi 
 * Date created: 2017
