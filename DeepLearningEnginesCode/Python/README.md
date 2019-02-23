@@ -28,10 +28,11 @@ The following is a list of online examples at
 —
 
 **Linear Associative Network**
+* Github directory: 
 * Github files: Ch02_LinearNetwork
 * Author: 
 * Date created: 
-* Original Source:: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
+* Original Source: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
 * License: 
 * Description: 
 * Network: Linear network using gradient descent to learn 1 association Linear network using gradient descent to learn 2 associations Linear network using gradient descent to learn photographs 
@@ -43,6 +44,7 @@ TTD Write code!
 —
 
 **Perceptron** 
+* Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
 * Github files: Ch03_Perceptron/test.py
 * Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
 * Author: Honghe??
@@ -56,6 +58,7 @@ TTD Ask permission.
 —
 
 **Backprop net**
+* Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork
 * Github files: Ch04_BackpropNetwork/xor.py
 * Author: Sunil Ray with mods by JVS
 * Date created: 2016
@@ -68,6 +71,7 @@ TTD
 —
 
 **Hopfield net**
+* Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
 * Github files: Ch05_HopfieldNet/lecture4.py
 * Author: Tom Stafford
 * Date created: 
@@ -80,6 +84,7 @@ TTD
 —
 
 **Boltzmann machine**
+* Github directory: 
 * Github files: 
 * Original Source::
 * Github files: 
@@ -93,8 +98,7 @@ TTD
 —
 
 **Restricted Boltzmann Machines**
-* Github files: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
-
+* Github directory:  https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 * Github files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
 * Author: Gabriel Bianconi 
 * Date created: 2017
@@ -110,6 +114,7 @@ TTD Ask permission, see other RBMs.
 —
 
 **Variational autoencoder**
+* Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder
 * Github files: Ch08_VariationalAutoencoder/main.py
 * Author: Kingma, Botha (cpbotha@vxlabs.com), Stone
 * Date created: 2018
@@ -126,6 +131,7 @@ TTD
 —
 
 **Reinforcement learning**
+* Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
 * Github files: Ch10_ReinforcementLearning/reinforcement_q_learning.py
 * Author: Adam Paszke (adam.paszke@gmail.com)
 * Date created: 2017.
