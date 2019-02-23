@@ -98,7 +98,6 @@ TTD
 
 **Chapter 7: Restricted Boltzmann Machines**
 * Github directory:  https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
-* Github files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
 * Author: Gabriel Bianconi 
 * Date created: 2017
 * License: MIT License
@@ -114,7 +113,6 @@ TTD Ask permission, see other RBMs.
 
 **Chapter 8: Variational Autoencoders**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder
-* Github files: Ch08_VariationalAutoencoder/main.py
 * Author: Kingma, Botha (cpbotha@vxlabs.com), Stone
 * Date created: 2018
 * License: MIT
@@ -131,7 +129,6 @@ TTD
 
 **Chapter 9: Reinforcement Learning**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
-* Github files: Ch10_ReinforcementLearning/reinforcement_q_learning.py
 * Author: Adam Paszke (adam.paszke@gmail.com)
 * Date created: 2017.
 * License: MIT
