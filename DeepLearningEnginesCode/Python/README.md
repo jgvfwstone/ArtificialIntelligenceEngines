@@ -1,3 +1,5 @@
+# Code Examples For Deep Learning Engines Book
+
 THIS IS A DRAFT.
 
 21 Feb 2018 	James V Stone
@@ -9,8 +11,6 @@ THIS IS A DRAFT.
 - [] add graph of output during training
 - [] display final results as images
 
-Code Examples Listed in Deep Learning Engines Book
-===========================================
 
 The online code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
 
@@ -58,7 +58,6 @@ TTD Write code!
 
 **Chapter 4: The Backpropagation Algorithm**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork
-* Github files: Ch04_BackpropNetwork/xor.py
 * Author: Sunil Ray, modified by JVS
 * Date created: 2016
 * License: None (ask permission)
@@ -71,10 +70,9 @@ TTD Permission requested from Ray.
 
 **Chapter 5: Hopfield Nets**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
-* Github files: Ch05_HopfieldNet/lecture4.py
 * Author: Tom Stafford
-* Date created: 
-* License: None
+* Date created: 2016
+* License: MIT
 * Original Source: https://github.com/tomstafford/emerge/blob/master/lecture4.ipynb
 * Description: Learns binary images. Recalls perfect versions from noisy input images.
 
@@ -127,7 +125,22 @@ TTD
 
 —
 
-**Chapter 9: Reinforcement Learning**
+**Chapter 9: Deep Backprop Network**
+* Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch09_ConvolutionalNetwork
+* Author: Various
+* Date created: 
+* License: https://github.com/pytorch/examples/blob/master/LICENSE
+* Original Source: https://github.com/pytorch/examples/blob/master/mnist
+* Description: Convolutional backprop network trained to recogise digits 0-9 from the MNIST data set.
+
+
+- [] Add graphical output.
+
+
+
+--
+
+**Chapter 10: Reinforcement Learning**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
 * Author: Adam Paszke (adam.paszke@gmail.com)
 * Date created: 2017.
