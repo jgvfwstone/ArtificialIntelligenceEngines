@@ -80,20 +80,6 @@ TTD
 
 —
 
-**Chapter 6: Boltzmann machines**
-* Github directory: 
-* Github files: 
-* Original Source::
-* Github files: 
-* Author: 
-* Date created: 
-* License: 
-* Description: 
-
-TTD
-
-—
-
 **Chapter 7: Restricted Boltzmann Machines**
 * Github directory:  https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 * Author: Gabriel Bianconi 
