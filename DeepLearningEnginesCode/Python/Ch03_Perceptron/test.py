@@ -6,6 +6,7 @@
 import generate_data
 import perceptron
 import matplotlib.pyplot as plt
+import numpy as np
 
 trainset = generate_data.generateData(80) # train set generation
 testset = generate_data.generateData(20) # test set generation
@@ -26,7 +27,7 @@ for x in testset:
 # The centor of line is the coordinate origin
 # So the length of line is 2
 # The separation line is orthogonal to w
-n = norm(p.w) # aka the length of p.w vector
+n = np.linalg.norm(p.w) # aka the length of p.w vector
 ww = p.w / n # a unit vector
 ww1 = [ww[1], -ww[0]]
 ww2 = [-ww[1], ww[0]]
