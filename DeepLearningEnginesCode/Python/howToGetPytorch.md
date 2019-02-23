@@ -74,7 +74,7 @@ To install scikit-learn do
 To make sure the files get put in the right place (ie in anaconda's domain), 
 you may need to ensure you are using the pip that is part of anaconda:
 
-\$ cd /Users/JimStone/anaconda3/bin
+\$ cd /Users/JimStone/anaconda3/bin (/Users/JimStone is just an example)
 
 \$ ./pip install gym
 
