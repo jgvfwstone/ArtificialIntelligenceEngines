@@ -137,7 +137,8 @@ TTD
 * License: MIT
 * Original Source: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 * Description: This shows how to use PyTorch to train an agent on the cart pole task, with graphical output of the cart pole.
-
+* Also see pytorch's own  example here
+https://github.com/pytorch/examples/tree/master/reinforcement_learning
 TTD OK - get permission.  Copyright 2017, PyTorch. Ask adam.paszke@gmail.com
 
 —
