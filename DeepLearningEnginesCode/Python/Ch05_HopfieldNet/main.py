@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# #Hopfield networks
+# #Hopfield networks, was lecture4.py
 
 # Now we arrive at the culmination of our efforts. In the first three weeks we grappled with the fundamentals needed to bring us to this point.
 # 
