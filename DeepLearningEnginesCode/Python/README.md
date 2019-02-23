@@ -50,9 +50,9 @@ TTD Write code!
 * Date created: 2013
 * License: None (ask permission)
 * Email: leopardsaga@gmail.com
-* Description: Gives nice graph.
-
-TTD Ask permission.
+* Description: Uses perceptron algorithm to classify linearly seperable classes, and produces graphical output after training is complete.
+ 
+ - []  permission requested.
 
 —
 
