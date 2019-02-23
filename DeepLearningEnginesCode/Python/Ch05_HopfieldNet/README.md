@@ -1,4 +1,4 @@
-**Chapter 5: Hopfield Nets**
+# Chapter 5: Hopfield Nets
 
 Run code using main.py.
 
