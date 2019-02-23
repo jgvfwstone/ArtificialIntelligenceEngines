@@ -89,8 +89,6 @@ TTD
 **Restricted Boltzmann Machines**
 * Github files: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 
-https://git.io/fhbvU
-
 * Github files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
 * Author: Gabriel Bianconi 
 * Date created: 2017
@@ -99,9 +97,9 @@ https://git.io/fhbvU
 * Description: Applies a RBM to the MNIST dataset. The trained model uses a SciPy-based logistic regression for classification. It achieves 92.8% classification accuracy.
 
 TTD Ask permission, see other RBMs.
-[] add initial comment
-[] plot lik during training
-[] show final images
+-[] add initial comment
+-[] plot lik during training
+-[] show final images
 
 —
 
