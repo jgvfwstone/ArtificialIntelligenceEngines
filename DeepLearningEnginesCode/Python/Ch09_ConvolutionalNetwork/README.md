@@ -1,4 +1,4 @@
-# Basic MNIST Example
+# Chapter 9: Basic MNIST Example
 
 ```bash
 pip install -r requirements.txt
