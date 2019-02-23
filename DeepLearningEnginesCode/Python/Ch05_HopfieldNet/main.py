@@ -18,16 +18,6 @@
 from IPython.display import HTML
 HTML('<iframe src=http://www.scholarpedia.org/article/Hopfield_network width=1000 height=350></iframe>')
 
-
-'''
-The code for running the Hopfield network is taken from Stefan Maetschke. Thanks Stefan!
-http://codeaffectionate.blogspot.co.uk/2013/05/fun-with-hopfield-and-numpy.html
-
-This will be the most complex code we have run so far, but it uses the basic principles we have already covered. 
-The difference is that we now have a network of hundreds of model neurons, not just one or two
-
-'''
-
 #Import libraries we will use. 
 # - remember, libraries are sets of functions we want to use in our code
 # - functions are reusable sets of commands that do important tasks. 
