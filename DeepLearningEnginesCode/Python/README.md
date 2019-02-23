@@ -46,7 +46,7 @@ TTD Write code!
 **Chapter 3: Perceptrons** 
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
 * Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
-* Author: Honghe??
+* Author: Giuseppe Vettigli
 * Date created: 2013
 * License: None (ask permission)
 * Email: leopardsaga@gmail.com
