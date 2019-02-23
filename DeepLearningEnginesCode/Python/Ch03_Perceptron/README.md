@@ -1,4 +1,4 @@
-**Perceptron**  
+# Perceptron
 
 Run code using main.py.
 
