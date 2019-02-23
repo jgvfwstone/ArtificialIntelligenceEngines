@@ -4,6 +4,12 @@ Reinforcement Learning (DQN) Tutorial
 
 **Author**: `Adam Paszke <https://github.com/apaszke>`_
 
+Run code using main.py.
+
+For details, see
+https://github.com/jgvfwstone/DeepLearningEngines/blob/master/DeepLearningEnginesCode/Python/README.md
+
+** Adam Paszke's Notes **
 
 This tutorial shows how to use PyTorch to train a Deep Q Learning (DQN) agent
 on the CartPole-v0 task from the `OpenAI Gym <https://gym.openai.com/>`__.
