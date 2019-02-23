@@ -76,12 +76,16 @@ you may need to ensure you are using the pip that is part of anaconda:
 
 \$ cd /Users/JimStone/anaconda3/bin (/Users/JimStone is just an example)
 
+Then include ./ in command, to force anaconda's pip to be used:
+
 \$ ./pip install gym
+
+I get this response (because I installed it previously); note that gym was installed correctly in the anaconda directory (and not in my mac's default python directory):
 
 Requirement already satisfied: gym in /Users/JimStone/anaconda3/lib/python3.7/site-packages (0.10.11)
 etc
 
-If you need to tell pip where to put downloaded files then use the -t flag:
+If you need to tell pip where to install downloaded files then use the -t flag:
 
 \$ pip3 -t, --target adirectory
 
