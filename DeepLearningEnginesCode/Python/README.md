@@ -95,6 +95,9 @@ TTD
 * Description: Applies a RBM to the MNIST dataset. The trained model uses a SciPy-based logistic regression for classification. It achieves 92.8% classification accuracy.
 
 TTD Ask permission, see other RBMs.
+[] add initial comment
+[] plot lik during training
+[] show final images
 
 —
 
