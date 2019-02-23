@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Was xor.py
 Created on Mon Dec  3 11:45:14 2018
 
 @author: JimStone
