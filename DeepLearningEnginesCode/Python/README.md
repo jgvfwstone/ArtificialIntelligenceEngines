@@ -27,7 +27,7 @@ The following is a list of online examples at
 
 —
 
-**Linear Associative Network**
+**Chapter 2: Linear Associative Networks**
 * Github directory: 
 * Github files: Ch02_LinearNetwork
 * Author: 
@@ -56,7 +56,7 @@ TTD Ask permission.
 
 —
 
-**Backprop net**
+**Chapter 4: The Backpropagation Algorithm**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork
 * Github files: Ch04_BackpropNetwork/xor.py
 * Author: Sunil Ray with mods by JVS
@@ -69,7 +69,7 @@ TTD
 
 —
 
-**Hopfield net**
+**Chapter 5: Hopfield Nets**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
 * Github files: Ch05_HopfieldNet/lecture4.py
 * Author: Tom Stafford
@@ -82,7 +82,7 @@ TTD
 
 —
 
-**Boltzmann machine**
+**Chapter 6: Boltzmann machines**
 * Github directory: 
 * Github files: 
 * Original Source::
@@ -96,7 +96,7 @@ TTD
 
 —
 
-**Restricted Boltzmann Machines**
+**Chapter 7: Restricted Boltzmann Machines**
 * Github directory:  https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 * Github files: Ch07_RestrictedBoltzmannMachine/mnist_example.py
 * Author: Gabriel Bianconi 
@@ -112,7 +112,7 @@ TTD Ask permission, see other RBMs.
 
 —
 
-**Variational autoencoder**
+**Chapter 8: Variational Autoencoders**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder
 * Github files: Ch08_VariationalAutoencoder/main.py
 * Author: Kingma, Botha (cpbotha@vxlabs.com), Stone
@@ -129,7 +129,7 @@ TTD
 
 —
 
-**Reinforcement learning**
+**Chapter 9: Reinforcement Learning**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
 * Github files: Ch10_ReinforcementLearning/reinforcement_q_learning.py
 * Author: Adam Paszke (adam.paszke@gmail.com)
