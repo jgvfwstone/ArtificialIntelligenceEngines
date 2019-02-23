@@ -117,6 +117,12 @@ or from Jupyter Lab, find the menu item
 
 and download to file *.py.
 
+For examples that give continuous output you will need
+
+$ pip install tensorboardX
+
+Code in this repository does not require tensorboardX.
+
 If you want a solid book on scientific python then get this book: 
 
 Learning Scientific Programming With Python by C Hill.
