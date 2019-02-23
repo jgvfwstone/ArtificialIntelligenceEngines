@@ -2,6 +2,12 @@ THIS IS A DRAFT.
 
 21 Feb 2018 	James V Stone
 
+**Things for JVS to do**
+- []rename main files main.py
+- [] check code runs well
+- [] add comments to code
+- [] add graph of output during training
+- [] display final results as images
 
 Code Examples Listed in Deep Learning Engines Book
 ===========================================
