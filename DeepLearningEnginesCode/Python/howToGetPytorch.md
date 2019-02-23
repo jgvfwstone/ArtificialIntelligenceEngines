@@ -34,11 +34,10 @@ I use the IPython application called Spyder which can be launched from within An
 
 In order to use standard neural network packages, you need to install (usually just one) software platforms:
 
-Pytorch (owned by Facebook)
-
-scikit-learn (funded by various public bodies)
-
-TensorFlow (owned by Google)
+* Pytorch (owned by Facebook)
+* scikit-learn (funded by various public bodies)
+* TensorFlow (owned by Google)
+* Keras (open source)
 
 Most examples in this book rely on Pytorch.
 Both Pytorch and scikit-learn allow fairly easy access to the underlying Python code.
