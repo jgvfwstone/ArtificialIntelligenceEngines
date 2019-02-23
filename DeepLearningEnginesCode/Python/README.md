@@ -48,7 +48,7 @@ TTD Write code!
 * Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
 * Author: Honghe
 * Date created: 2013
-* License: None (ask permission)
+* License: None, permission requested.
 * Email: leopardsaga@gmail.com
 * Description: Uses perceptron algorithm to classify linearly seperable classes, and produces graphical output after training is complete.
  
