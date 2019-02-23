@@ -117,6 +117,9 @@ or from Jupyter Lab, find the menu item
 
 and download to file *.py.
 
+Final Notes
+================
+
 For examples that give continuous output you will need
 
 $ pip install tensorboardX
