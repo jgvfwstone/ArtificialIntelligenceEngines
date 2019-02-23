@@ -1,4 +1,6 @@
-# Chapter 9: Basic MNIST Example
+# Chapter 9: Deep Backprop Networks
+
+Convolutional backprop network trained to recogise digits 0-9 from the MNIST data set.
 
 ```bash
 pip install -r requirements.txt
