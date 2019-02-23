@@ -1,6 +1,5 @@
 
-Reinforcement Learning (DQN) Tutorial
-=====================================
+# Chapter 9: Reinforcement Learning
 
 **Author**: `Adam Paszke <https://github.com/apaszke>`_
 
