@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Was xor.py
 Created on Mon Dec  3 11:45:14 2018
 
 @author: JimStone
 """
 
 import numpy as np
-
+import pylab as pl
+import matplotlib.pyplot as plt
 #Input array
 #X=np.array([[1,0,1,0], [1,0,1,1], [0,1,0,1]])
 X=np.array([[0,0], [0,1], [1,0] , [1,1]])
@@ -26,6 +26,8 @@ def derivatives_sigmoid(x):
 
 #Variable initialization
 epoch=9000 #Setting training iterations
+errors = np.zeros(epoch)
+
 lr=0.5 #Setting learning rate
 inputlayer_neurons = X.shape[1] #number of features in data set
 hiddenlayer_neurons = 2 #number of hidden layer neurons
@@ -36,6 +38,7 @@ wh=np.random.uniform(size=(inputlayer_neurons,hiddenlayer_neurons))
 bh=np.random.uniform(size=(1,hiddenlayer_neurons))
 wout=np.random.uniform(size=(hiddenlayer_neurons,output_neurons))
 bout=np.random.uniform(size=(1,output_neurons))
+
 
 for i in range(epoch):
 
@@ -48,10 +51,10 @@ for i in range(epoch):
     output = sigmoid(output_layer_input)
     
     #Backpropagation
-    E = y-output
+    d = y-output
     slope_output_layer = derivatives_sigmoid(output)
     slope_hidden_layer = derivatives_sigmoid(hiddenlayer_activations)
-    d_output = E * slope_output_layer
+    d_output = d * slope_output_layer
     Error_at_hidden_layer = d_output.dot(wout.T)
     d_hiddenlayer = Error_at_hidden_layer * slope_hidden_layer
     wout += hiddenlayer_activations.T.dot(d_output) *lr
@@ -59,12 +62,25 @@ for i in range(epoch):
     wh += X.T.dot(d_hiddenlayer) *lr
     bh += np.sum(d_hiddenlayer, axis=0,keepdims=True) *lr
 
+    errors[i] = sum(d*d)
+    
+plt.plot(errors)
+#    sleep(0.1)
+plt.xlabel('Epoch')
+plt.ylabel('Error')
+pl.show()
+    
+print('Target values')
+print(y)
+print('Output values')
 print(output)
-EE=np.linalg.norm(E)
+error=np.linalg.norm(d)
     #print(i)
-print(EE)
+print('Final error:')
+print(error)
     #print('i = %s ' %i)
     #print('Error = %s' % EE)
+
 
 
  
