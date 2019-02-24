@@ -1,4 +1,4 @@
-# Code For Artificial Intellgence Engines Book
+# Code For Artificial Intelligence Engines Book
 
 THIS IS A DRAFT.
 
