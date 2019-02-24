@@ -3,12 +3,17 @@
 """
 Created on Mon Dec  3 11:45:14 2018
 
-@author: JimStone
+backprop for XOR.
+
+JVS added graphics.
 """
 
 import numpy as np
-import pylab as pl
 import matplotlib.pyplot as plt
+
+# set random seed so get same sequence of random numbers each time prog is run.
+np.random.seed(1)
+
 #Input array
 #X=np.array([[1,0,1,0], [1,0,1,1], [0,1,0,1]])
 X=np.array([[0,0], [0,1], [1,0] , [1,1]])
@@ -25,8 +30,11 @@ def derivatives_sigmoid(x):
     return x * (1 - x)
 
 #Variable initialization
-epoch=9000 #Setting training iterations
+epoch=5000 #Setting training iterations
+plotinterval=500
+
 errors = np.zeros(epoch)
+numcorrects = np.zeros(epoch)
 
 lr=0.5 #Setting learning rate
 inputlayer_neurons = X.shape[1] #number of features in data set
@@ -39,6 +47,19 @@ bh=np.random.uniform(size=(1,hiddenlayer_neurons))
 wout=np.random.uniform(size=(hiddenlayer_neurons,output_neurons))
 bout=np.random.uniform(size=(1,output_neurons))
 
+plt.ion()
+
+figerror = plt.figure(1);
+#figerror.clf()
+axerror = figerror.add_subplot(111)
+axerror.set_xlabel('Epoch')
+axerror.set_ylabel('Error')
+        
+fignumcorrect = plt.figure(2);
+ #fignumcorrect.clf()
+axnumcorrect = fignumcorrect.add_subplot(111)
+axnumcorrect.set_ylabel('Number correct')
+axnumcorrect.set_xlabel('Epoch')
 
 for i in range(epoch):
 
@@ -62,14 +83,24 @@ for i in range(epoch):
     wh += X.T.dot(d_hiddenlayer) *lr
     bh += np.sum(d_hiddenlayer, axis=0,keepdims=True) *lr
 
-    errors[i] = sum(d*d)
+    error=np.linalg.norm(d)
+    errors[i]=error
     
-plt.plot(errors)
-#    sleep(0.1)
-plt.xlabel('Epoch')
-plt.ylabel('Error')
-pl.show()
+    # count number of correct responses
+    a=(output<0.5)
+    b=(y<0.5)
+    numcorrect = sum(a==b)
+    numcorrects[i]=numcorrect
     
+    if (i % plotinterval ==0):
+        axerror.plot(errors[0:i],'k')
+        plt.show()
+        plt.pause(0.001)
+        
+        axnumcorrect.plot(numcorrects[0:i],'k')
+        plt.show()
+        plt.pause(0.001)
+
 print('Target values')
 print(y)
 print('Output values')
@@ -80,6 +111,7 @@ print('Final error:')
 print(error)
     #print('i = %s ' %i)
     #print('Error = %s' % EE)
+plt.show()
 
 
 
