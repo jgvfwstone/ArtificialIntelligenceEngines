@@ -26,18 +26,15 @@ The following is a list of online examples at
 	https://github.com/jgvfwstone/DeepLearningEngines
 
 **Chapter 2: Linear Associative Networks**
-* Github directory: 
-* Github files: Ch02_LinearNetwork
-* Author: 
+* Github directory: https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork
+* Author: Stuart Wilson, modified by JVStone.
 * Date created: 
-* Original Source: https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html#sphx-glr-beginner-examples-nn-two-layer-net-nn-py
-* License: 
+* Original Source: Personal communication.
+* License: MIT.
 * Description: 
-* Network: Linear network using gradient descent to learn 1 association Linear network using gradient descent to learn 2 associations Linear network using gradient descent to learn photographs 
-For linear network start with two_layer_net_nn.py
-in /Users/JimStone/Documents/GitHub/DNNStoneBookCode/Python/PyTorchCode/tutorials
+* Network: Associative linear network learns to map 4 2D input vectors to 4 scalars, using gradient descent.
 
-TTD Write code!
+TTD Modify to accept photos.
 
 **Chapter 3: Perceptrons** 
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
