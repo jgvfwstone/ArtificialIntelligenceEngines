@@ -99,4 +99,5 @@ ww1 = [ww[1], -ww[0]]
 ww2 = [-ww[1], ww[0]]
 plt.ion()
 plt.plot([ww1[0], ww2[0]], [ww1[1], ww2[1]], '--k')
+plt.title('Two classes separated by a line orthogonal to the weight vector')
 plt.show()
