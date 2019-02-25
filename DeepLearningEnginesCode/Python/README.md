@@ -76,7 +76,7 @@ TTD
 * Original Source: https://github.com/GabrielBianconi/pytorch-rbm
 * Description: Applies a single RBM to the MNIST dataset of images of digits from 0-9. The trained model uses a SciPy-based logistic regression to classify outputs. It achieves 92.8% classification accuracy on the test set of images.
 
-TTD Ask permission, see other RBMs.
+TTD Ask permission.
 - [] add initial comment
 - [] plot lik during training
 - [] show final images
