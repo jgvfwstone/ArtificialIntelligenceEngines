@@ -58,8 +58,6 @@ TTD Write code!
 
 TTD Permission requested from Ray.
 
-—
-
 **Chapter 5: Hopfield Nets**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
 * Author: Tom Stafford
@@ -76,7 +74,7 @@ TTD
 * Date created: 2017
 * License: MIT License
 * Original Source: https://github.com/GabrielBianconi/pytorch-rbm
-* Description: Applies a RBM to the MNIST dataset. The trained model uses a SciPy-based logistic regression for classification. It achieves 92.8% classification accuracy.
+* Description: Applies a single RBM to the MNIST dataset of images of digits from 0-9. The trained model uses a SciPy-based logistic regression to classify outputs. It achieves 92.8% classification accuracy on the test set of images.
 
 TTD Ask permission, see other RBMs.
 - [] add initial comment
