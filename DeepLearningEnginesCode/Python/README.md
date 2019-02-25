@@ -52,7 +52,7 @@ TTD Write code!
 * Email: leopardsaga@gmail.com
 * Description: Uses perceptron algorithm to classify linearly separable classes, and produces graphical output after training is complete.
  
- - []  permission requested.
+ - [x]  permission requested. Obtained.
 
 —
 
