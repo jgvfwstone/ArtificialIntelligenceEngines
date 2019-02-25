@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Feb 25 21:13:01 2019
+
+@author: JimStone
+"""
+
 #  Linear associative net, adapted from backpropSuartWilson_JVS1.py
 
 import numpy as np
@@ -28,7 +36,6 @@ class MLP():
         # get input vector
         input = np.hstack([inp,1.])
         
-    
         # use input layers state to get output layer state
         for k in range(self.nOutput):
             self.activityO[k] = self.activation(np.dot(self.wO[k,:],input))
@@ -36,16 +43,17 @@ class MLP():
         # Backpropagation learning algorithm
         if (alpha>0.):
             input = np.hstack([inp,1.])
-             # get delta terms, start at output layer
+            # get delta terms of output layer units
             for k in range(self.nOutput):
-                self.deltaO[k] = -(tar[k]-self.activityO[k])
+                self.deltaO[k] = (self.activityO[k] - tar[k])
 
             for k in range(self.nOutput):
-                    self.wO[k,:] += -alpha*self.deltaO[k]*input
+                    self.wO[k,:] -= alpha * self.deltaO[k] * input
 
-    # Neuron activation function
+    # Linear neuron activation function
     def activation(self,x):
-        return 1./(1.+np.exp(-x))
+        y=1.0*x
+        return y
 
 
 ########## set parameters ##########
@@ -63,7 +71,7 @@ target = np.array([[0],[1],[1],[0]])
 target = np.array([[0],[1],[0],[1]])
 
 # Timesteps
-T = 200
+T = 50
 
 # Store dynamic values
 WO = np.zeros([T,M.nOutput,M.nInput+1])
@@ -83,8 +91,11 @@ for t in range(T):
     ce = 0.
     for k in range(target.shape[0]):
         M.step(input[k,:],target[k,:],0.)
-        ce += np.sum(target[k,:]*np.log(M.activityO)+(1.-target[k,:])*np.log(1.-M.activityO))
-    CE[t] = -ce
+#        ce += np.sum(target[k,:]*np.log(M.activityO)+(1.-target[k,:])*np.log(1.-M.activityO))
+        a=(target[k,:]-M.activityO)
+        ce += np.sum(a*a)
+
+    CE[t] = ce
 
 # Print comparison of target and output
 for k in range(target.shape[0]):
@@ -103,5 +114,3 @@ f.set_title('Error during training')
 pl.show()
 
 ########## The End ##########
-
-
