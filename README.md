@@ -1,4 +1,7 @@
 # Artificial Intelligence Engines
+
+NOTE: THIS IS A DRAFT.
+
 Computer code collated from various sources for use with the book: 
     
       Artificial Intelligence Engines  
