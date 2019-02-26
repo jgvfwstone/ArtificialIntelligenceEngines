@@ -29,4 +29,4 @@ How To ...
 ===========
 There is help file within each directory, for example:
 
-    DeepLearningEnginesCode/Python/howToGetPytorch.tex.md
+https://github.com/jgvfwstone/ArtificialIntellgenceEngines/blob/master/DeepLearningEnginesCode/Python/README.md
