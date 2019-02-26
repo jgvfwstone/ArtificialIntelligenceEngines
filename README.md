@@ -4,9 +4,11 @@ NOTE: THIS IS A DRAFT.
 
 Computer code collated from various sources for use with the book: 
     
-**Artificial Intelligence Engines: **
-**      A Tutorial Introduction to the Mathematics of Deep Learning**
-  **      by James V Stone**
+**Artificial Intelligence Engines: 
+
+    A Tutorial Introduction to the Mathematics of Deep Learning
+      
+      by James V Stone**
 
 http://jim-stone.staff.shef.ac.uk/DeepLearning/DeepLearningMain.html
 
