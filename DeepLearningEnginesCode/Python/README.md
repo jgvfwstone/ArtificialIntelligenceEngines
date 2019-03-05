@@ -45,6 +45,8 @@ TTD Modify to accept photos.
 * Email: leopardsaga@gmail.com
 * Description: Uses perceptron algorithm to classify linearly separable classes, and produces graphical output after training is complete.
 
+Note also see: https://github.com/rasbt/stat479-deep-learning-ss19/blob/master/L09_mlp/code/xor-problem.ipynb
+
 **Chapter 4: The Backpropagation Algorithm**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork
 * Author: Sunil Ray, modified by JVS
