@@ -8,9 +8,7 @@ Computer code collated from various sources for use with the book:
  
 **by James V Stone**
 
-Book web page: https://jim-stone.staff.shef.ac.uk/AIEngines/
-
-This file: https://github.com/jgvfwstone/ArtificialIntellgenceEngines
+This file is: https://github.com/jgvfwstone/ArtificialIntellgenceEngines
 
 Note that the book is principally about the mathematics of deep learning.
 This repository is intended to provide 'taster' code, rather than an exercise in how to program deep learning networks. Most of this code is in Python, with some code duplicated in MatLab. Because these examples are collated from different sources, the coding style varies between examples.
