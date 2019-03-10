@@ -3,15 +3,9 @@
 NOTE: THIS IS A DRAFT.
 
 Computer code collated from various sources for use with the book: 
-    
-**Artificial Intelligence Engines: 
-    A Tutorial Introduction to the Mathematics of Deep Learning**
-    
-This site was built using [GitHub Pages](https://pages.github.com/).
 
-
-    
-
+[Artificial Intelligence Engines: A Tutorial Introduction to the Mathematics of Deep Learning](https://jim-stone.staff.shef.ac.uk/AIEngines/)
+ 
 **by James V Stone**
 
 Book web page: https://jim-stone.staff.shef.ac.uk/AIEngines/
