@@ -1,6 +1,6 @@
 # Artificial Intelligence Engines
 
-NOTE: THIS IS A DRAFT.
+**NOTE: THIS WHOLE REPOSITORY IS A DRAFT, which will be completed before the book is published.**
 
 Computer code collated from various sources for use with the book: 
 
