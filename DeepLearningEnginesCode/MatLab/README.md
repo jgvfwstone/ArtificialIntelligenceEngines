@@ -1,5 +1,7 @@
 MatLab Examples
 
+See perceptron5.m
+
 V nice matlab code here: dustinstansbury BUT 5 yrs old
 
 https://github.com/dustinstansbury/medal/tree/master/models
