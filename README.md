@@ -11,7 +11,7 @@ Computer code collated from various sources for use with the book:
 This file is: https://github.com/jgvfwstone/ArtificialIntelligenceEngines
 
 Note that the book is principally about the mathematics of deep learning.
-This repository is intended to provide 'taster' code, rather than an exercise in how to program deep learning networks. Most of this code is in Python, with some code duplicated in MatLab. Because these examples are collated from different sources, the coding style varies between examples.
+This repository is intended to provide 'taster' code, rather than an exercise in how to program deep learning networks. Most of this code is in Python, with some code duplicated in MatLab. Because this code has been collated from different sources, the coding style varies between examples.
 
 Each example has been reproduced with permission from the author.
 
