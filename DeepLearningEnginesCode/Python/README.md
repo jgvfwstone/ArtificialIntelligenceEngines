@@ -55,7 +55,8 @@ Note also see: https://github.com/rasbt/stat479-deep-learning-ss19/blob/master/L
 * Original Source: https://www.analyticsvidhya.com/blog/2017/05/neural-network-from-scratch-in-python-and-r/
 * Description:  A three layer backprop network with 2 input units, 2 hidden units and 1 output unit that learns the exclusive-OR (XOR) problem.
 
-TTD Permission requested from Ray.
+TTD Permission requested from Ray. Requested on 16th March via
+https://www.analyticsvidhya.com/contact/
 
 **Chapter 5: Hopfield Nets**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
