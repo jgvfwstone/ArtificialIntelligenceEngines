@@ -1,8 +1,7 @@
 # Code For Artificial Intelligence Engines Book
 
 THIS IS A DRAFT.
-
-21 Feb 2018 	James V Stone
+ 	James V Stone
 
 The online code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
 
