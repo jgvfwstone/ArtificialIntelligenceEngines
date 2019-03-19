@@ -2,19 +2,17 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 25 21:13:01 2019
-
 @author: JimStone
 """
-
-#  Linear associative net, adapted from backpropSuartWilson_JVS1.py
+#  Linear associative net, adapted from backprop network code by Suart Wilson.
 
 import numpy as np
 import pylab as pl
 
-########## Define classes ##########
-
+########## Define class MLP ##########
 class MLP():
     
+    ########## Define Methods for MLP class ##########
     # Initialize network topology
     def __init__(self,nInput,nOutput):
         
@@ -25,18 +23,19 @@ class MLP():
         # define weights between layers
         self.wO = np.random.rand(self.nOutput,self.nInput+1)
         
-        # define vectors to store state of each layer
+        # define vector to store state of output layer
         self.activityO = np.zeros([self.nOutput])
         
-        # define vectors to store delta terms of each layer
+        # define vector to store delta terms of output layer
         self.deltaO = np.zeros([self.nOutput])
 
     # Iterate the network (activation and learning)
     def step(self,inp,tar,alpha):
-        # get input vector
+        # get input vector with bias unit by appending 1 to end of input vector using 
+         # hstack=Stack arrays in sequence horizontally (column wise).
         input = np.hstack([inp,1.])
         
-        # use input layers state to get output layer state
+        # use input layer state to get output layer state
         for k in range(self.nOutput):
             self.activityO[k] = self.activation(np.dot(self.wO[k,:],input))
 
