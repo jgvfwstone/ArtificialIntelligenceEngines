@@ -7,12 +7,13 @@ Created on Mon Feb 25 21:13:01 2019
 #  Linear associative net, adapted from backprop network code by Suart Wilson.
 
 import numpy as np
+# use pylab for ploting.
 import pylab as pl
 
 ########## Define class MLP ##########
-class MLP():
+class LinearNetwork():
     
-    ########## Define Methods for MLP class ##########
+    ########## Define Methods for LinearNetwork class ##########
     # Initialize network topology
     def __init__(self,nInput,nOutput):
         
@@ -20,92 +21,113 @@ class MLP():
         self.nInput = nInput
         self.nOutput = nOutput
         
-        # define weights between layers
-        self.wO = np.random.rand(self.nOutput,self.nInput+1)
+        # define weights between input and output layers
+        # use of +1 input units defines bias unit in input layer
+        # example in book does not have bias term, so this is an extra in code.
+        self.W = np.random.rand(self.nOutput,self.nInput+1)
+        
+        # space to store change in weights
+        self.dw = np.zeros([self.nOutput,self.nInput+1])
         
         # define vector to store state of output layer
-        self.activityO = np.zeros([self.nOutput])
+        self.state = np.zeros([self.nOutput])
         
         # define vector to store delta terms of output layer
         self.deltaO = np.zeros([self.nOutput])
 
-    # Iterate the network (activation and learning)
+    # Iterate the network by one step 
     def step(self,inp,tar,alpha):
         # get input vector with bias unit by appending 1 to end of input vector using 
-         # hstack=Stack arrays in sequence horizontally (column wise).
-        input = np.hstack([inp,1.])
+        # example in book does not have bias term, so this is an extra in code.
+        input = np.append([inp], [1.0])
         
         # use input layer state to get output layer state
         for k in range(self.nOutput):
-            self.activityO[k] = self.activation(np.dot(self.wO[k,:],input))
+            # get total input u to output unit
+            u = np.dot(self.W[k,:],input)
+            # use u to find state of output unit
+            self.state[k] = self.activation(u)
 
-        # Backpropagation learning algorithm
+        # Learning algorithm
         if (alpha>0.):
-            input = np.hstack([inp,1.])
             # get delta terms of output layer units
             for k in range(self.nOutput):
-                self.deltaO[k] = (self.activityO[k] - tar[k])
+                self.deltaO[k] = (self.state[k] - tar[k])
 
             for k in range(self.nOutput):
-                    self.wO[k,:] -= alpha * self.deltaO[k] * input
+                self.dw[k,:] -= alpha * self.deltaO[k] * input
 
-    # Linear neuron activation function
+    # Define linear unit activation function
     def activation(self,x):
-        y=1.0*x
-        return y
+        return x
 
 
 ########## set parameters ##########
-
+nip = 2 # num input units
+nop = 1 # num output units
 # Initialize network
-M = MLP(2,1) # JVS  works with 2 h units, but graphics not set up for that.
+M = LinearNetwork(nip,nop) 
 
-# Input space and targets for XOR
-input = np.array([[0,0],[0,1],[1,0],[1,1]])
+# Input vectors 
+inputvectors = np.array([[0,0],[0,1],[1,0],[1,1]])
 
-# targets for XOR
-target = np.array([[0],[1],[1],[0]])
+# targets for XOR, not used here, but left here for comparison
+# target = np.array([[0],[1],[1],[0]])
 
 # targets for simple linearly separable problem
-target = np.array([[0],[1],[0],[1]])
+targets = np.array([[0],[1],[0],[1]])
 
-# Timesteps
-T = 50
+# Timesteps = number of learning trials
+numiter = 20
 
-# Store dynamic values
-WO = np.zeros([T,M.nOutput,M.nInput+1])
-CE = np.zeros(T)
+# num training vectors
+T = targets.shape[0]
 
-########## Run ##########
+# set learning rate alpha
+alpha = 0.2
 
-for t in range(T):
+# Store cost function values E
+E = np.zeros(numiter)
 
-    # Index random input / target pair
-    ip = int(np.floor(np.random.rand()*4.))
+########## Run learning ##########
+for iter in range(numiter):
+
+    # reset weight changes to zero
+    M.dw = M.dw*0
     
-    # Iterate the backprop algorithm
-    M.step(input[ip],target[ip],0.5)
+    Et = 0.
     
-    # Compute the error
-    ce = 0.
-    for k in range(target.shape[0]):
-        M.step(input[k,:],target[k,:],0.)
-#        ce += np.sum(target[k,:]*np.log(M.activityO)+(1.-target[k,:])*np.log(1.-M.activityO))
-        a=(target[k,:]-M.activityO)
-        ce += np.sum(a*a)
-
-    CE[t] = ce
+    for t in range(T):
+        
+        # find weight change for one association for one step
+        inputvector = inputvectors[t]
+        target = targets[t]
+        
+        # get network output and delta term at output 
+        M.step(inputvector,target,alpha)
+        
+        # Compute the error
+        dif =(target - M.state)
+        Et += np.sum(dif*dif)
+    
+    E[iter] = Et
+    
+    # update weights
+    for k in range(M.nOutput):
+        M.W[k,:] += M.dw[k,:]
 
 # Print comparison of target and output
-for k in range(target.shape[0]):
-    M.step(input[k,:],target[k,:],0.)
-    print( 'target: ' + str(target[k,0]) + ', output: ' + ("%.2f" % M.activityO))
+for k in range(T):
+    inputvector = inputvectors[k,:]
+    target = targets[t]
+    M.step(inputvector,target,0.)
+    print('input vector:' + str(inputvector))
+    print( 'target: ' + str(target) + ', output: ' + ("%.2f" % M.state))
 
 ########## Plot ##########
-
 F = pl.figure(0,figsize=(4,4))
 f = F.add_subplot(111)
-f.plot(CE)
+f.plot(E)
 f.set_aspect(np.diff(f.get_xlim())/np.diff(f.get_ylim()))
 f.set_xlabel('Training epoch')
 f.set_ylabel('Error')
