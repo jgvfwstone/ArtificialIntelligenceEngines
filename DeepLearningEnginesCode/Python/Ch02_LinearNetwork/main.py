@@ -63,6 +63,8 @@ class LinearNetwork():
 
 
 ########## set parameters ##########
+# set random seed so get same sequence of random numbers each time prog is run.
+np.random.seed(1)
 nip = 2 # num input units
 nop = 1 # num output units
 # Initialize network
