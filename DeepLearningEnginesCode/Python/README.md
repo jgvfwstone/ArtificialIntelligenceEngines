@@ -26,8 +26,6 @@ The following is a list of online examples at
 * Description: 
 * Network: Associative linear network learns to map 4 2D input vectors to 4 scalars, using gradient descent.
 
-TTD Modify to accept photos.
-
 **Chapter 3: Perceptrons** 
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
 * Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
@@ -55,8 +53,6 @@ Note also see: https://github.com/rasbt/stat479-deep-learning-ss19/blob/master/L
 * Original Source: https://github.com/tomstafford/emerge/blob/master/lecture4.ipynb
 * Description: Learns binary images. Recalls perfect versions from noisy input images.
 
-TTD
-
 **Chapter 7: Restricted Boltzmann Machines**
 * Github directory:  https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 * Author: Gabriel Bianconi 
@@ -64,11 +60,6 @@ TTD
 * License: MIT License
 * Original Source: https://github.com/GabrielBianconi/pytorch-rbm
 * Description: Applies a single RBM to the MNIST dataset of images of digits from 0-9. The trained model uses a SciPy-based logistic regression to classify outputs. It achieves 92.8% classification accuracy on the test set of images.
-
-TTD Ask permission.
-- [] add initial comment
-- [] plot lik during training
-- [] show final images
 
 **Chapter 8: Variational Autoencoders**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder
@@ -82,8 +73,6 @@ This is a combination of two vae main.py files, from
 and 
 	https://github.com/dpkingma/examples/tree/master/vae
 
-TTD
-
 **Chapter 9: Deep Backprop Network**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch09_ConvolutionalNetwork
 * Author: Various
@@ -91,8 +80,6 @@ TTD
 * License: https://github.com/pytorch/examples/blob/master/LICENSE
 * Original Source: https://github.com/pytorch/examples/blob/master/mnist
 * Description: Convolutional backprop network trained to recogise digits 0-9 from the MNIST data set.
-
-- [] Add graphical output.
 
 **Chapter 10: Reinforcement Learning**
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
@@ -103,4 +90,4 @@ TTD
 * Description: This shows how to use PyTorch to train an agent on the cart pole task, with graphical output of the cart pole.
 * Also see pytorch's own  example here
 https://github.com/pytorch/examples/tree/master/reinforcement_learning
-TTD OK - get permission.  Copyright 2017, PyTorch. Ask adam.paszke@gmail.com
+
