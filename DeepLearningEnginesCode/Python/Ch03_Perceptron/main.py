@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Perceptron
-@author: JimStone
+Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
+Author: Honghe, modified by JVS.
 """
 
 import matplotlib.pyplot as plt
