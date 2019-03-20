@@ -1,20 +1,19 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# #Hopfield networks, was lecture4.py, comments in code by Tom Stafford.
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Hopfield network.
+Comments in code by Tom Stafford.
+@author: Tom Stafford, modified by JimStone
+"""
 
 from IPython.display import HTML
 HTML('<iframe src=http://www.scholarpedia.org/article/Hopfield_network width=1000 height=350></iframe>')
 
 # Import libraries we will use. 
-import numpy as np #maths functions in python
-#import socket #to get host machine identity
+import numpy as np # maths functions in python
 import os # for joining paths and filenames sensibly
-import glob #for finding files
-import pylab as plt #graphing functions
-
-#draw graphs in this notebook rather than in separate windows
-#get_ipython().run_line_magic('matplotlib', 'inline')
+import glob # for finding files
+import pylab as plt # for graphing functions
 
 def from_jpg(name):
     #This function takes image files and converts them into a pattern of numbers
@@ -60,7 +59,6 @@ def recall(W, patterns, steps=5):
         patterns = sgn(dot(patterns,W)) #adjust the neuron activity to reflect the weights
     return patterns #return the final pattern
     
-
 def degrade(patterns,noise):
     #This allows you to add noise to a pattern
     sgn=np.vectorize(lambda x: x*-1 if np.random.random()<noise else x)
@@ -69,9 +67,8 @@ def degrade(patterns,noise):
 
 def degrade_weights(W,noise):
     #this function resets a proportion of the weights in the network
-    sgn=vectorize(lambda x: 0 if random()<noise else x)
+    sgn=np.vectorize(lambda x: 0 if np.random()<noise else x)
     return sgn(W)
-    
 
 def makepartial(p,proportion):
     u=int(proportion*len(p))
@@ -79,11 +76,17 @@ def makepartial(p,proportion):
     new_p[:u]=-1
     return new_p
 
-# We could train our Hopfiel network on any pattern. The neurons could be connected to any event, could represent any information. It is easiest to use visual patterns, though. Imagine that these are neurons which are connected to your visual system, so their activity normally reflects patterns of light and dark. What is another word for a pattern of light and dark? A picture!
-# 
-# So, first we need some pictures for our network to learn
+"""
+We could train our Hopfiel network on any pattern. The neurons could be 
+connected to any event, could represent any information. It is easiest 
+to use visual patterns, though. Imagine that these are neurons which are 
+connected to your visual system, so their activity normally reflects 
+patterns of light and dark. What is another word for a pattern of light 
+and dark? A picture!
+So, first we need some pictures for our network to learn ...
+"""
 
-# <b>If you put your own jpg in the 'patterns' subdirectory the network will learn your picture as well</b>
+# If you put your own jpg in the 'patterns' subdirectory the network will learn your picture as well</b>
 
 #get files from 'patterns' directory. You can put your own pictures in there if you want
 files = glob.glob(os.path.join('patterns','*.jpg')) #where are the patterns stored?
@@ -121,7 +124,6 @@ W = train(patterns)
 # 
 # In the graph below the first row shows the pattern the network is shown (the starting activity). The second row shows the pattern of activity after the neurons are allowed to send signals back and forth
 
-
 print("test with originals")
 
 # Four axes, returned as a 2-d array
@@ -142,7 +144,6 @@ plt.setp([a.get_yticklabels() for a in axarr[:, 1]], visible=False)
 plt.suptitle('Test with training patterns')
 plt.savefig('fullcue.png')
 
-
 # They should match. Graphically this isn't very interesting, but it means that the network doesn't move away from the pattern it is shown if it has been trained it before. Is this something like what our memories do when we recognise something?
 
 # #Recognition with noisy inputs
@@ -154,7 +155,6 @@ noise=0.1
 #reload original patterns. 
 #There's some variable reference / variable copying thing I don't understand that makes this necessary
 patterns=np.array([from_jpg(p) for p in files]) #put individual patterns in array
-
 
 print ("degrade patterns with noise")
 testpatterns=degrade(patterns,noise)
@@ -177,7 +177,6 @@ plt.setp([a.get_yticklabels() for a in axarr[:, 1]], visible=False)
 plt.suptitle('Test with noisy cue')
 plt.savefig('noisycue.png')
 
-
 # In the cell above the amount of noise is defined as 0.1. That's 10% of pixels randomly switched. What happens if you change that number? How is the system responding?
 
 # What you are seeing is sometimes called 'graceful degredation'. That means that the system fails gradually - it doesn't need the exact right inputs to guess the right pattern. Consider:
@@ -187,14 +186,14 @@ plt.savefig('noisycue.png')
 # Human information processing is often very good at coping with noisy inputs. Computers, not so much.
 # 
 
-# #Recognition from partial cues
+# Recognition from partial cues
 
 print("test with partial cues")
 
 proportion=0.4
 
-#reload original patterns. 
-#There's some variable reference / variable copying thing I don't understand that makes this necessary
+# reload original patterns. 
+# There's some variable reference / variable copying thing I don't understand that makes this necessary
 patterns=np.array([from_jpg(p) for p in files]) #put individual patterns in array
    
 testpatterns=[makepartial(p,proportion) for p in patterns]
@@ -217,6 +216,6 @@ plt.setp([a.get_yticklabels() for a in axarr[:, 1]], visible=False)
 plt.suptitle('Test with partial cue')
 plt.savefig('partialcue.png')
 
+# So the network can recover the patterns it was trained on from a partial cue. 
 
-# So the network can recover the patterns it was trained on from a partial cue. Compare to how you can remember someone's name from their face, or the answer to the question "what is the capital of France?"
-# 
+########## The End ##########
