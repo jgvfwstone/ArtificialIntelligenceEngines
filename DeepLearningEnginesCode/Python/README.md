@@ -28,11 +28,10 @@ The following is a list of online examples at
 **Chapter 3: Perceptrons** 
 * Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
 * Original Source: https://github.com/Honghe/perceptron/tree/master/perceptron
-* Author: Honghe
+* Author: Honghe, modified by JVS.
 * Date created: 2013
-* License: None, permission obtained.
-* Email: leopardsaga@gmail.com
-* Description: Uses perceptron algorithm to classify linearly separable classes, and produces graphical output after training is complete.
+* License: None, copied with permission from author.
+* Description: Uses perceptron algorithm to classify two linearly separable classes, and produces graphical output during training.
 
 Note also see: https://github.com/rasbt/stat479-deep-learning-ss19/blob/master/L09_mlp/code/xor-problem.ipynb
 
