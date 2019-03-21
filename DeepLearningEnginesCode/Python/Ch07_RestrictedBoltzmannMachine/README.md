@@ -4,7 +4,7 @@
 
 ## Overview
 
-To run code used main.py.
+To run code, use main.py.
 
 Notes from the author (Gabriel Bianconi):
 
