@@ -8,6 +8,31 @@ Date created: 2018
 License: MIT
 Original Source: https://github.com/dpkingma/examples/tree/master/vae
 Description: Data are MNIST images of digits. This is an improved implementation of the paper (http://arxiv.org/abs/1312.6114) by Kingma and Welling. It uses ReLUs and the adam optimizer, instead of sigmoids and adagrad. These changes make the network converge much faster. JVS added graph of ELBO during training, plus reconstructed images ater training. This is a combination of two vae main.py files, from https://github.com/pytorch/examples/tree/master/vae and https://github.com/dpkingma/examples/tree/master/vae
+
+The code below makes a VAE:
+    ENCODER:
+        28x28 image = 784 input units -> 400 ReLU units -> two sets of 20 units (a 20-dim Gaussian)
+        Each sample from 20-dim Gaussian yields 20 scalars z
+    DECODER:
+        z is input to decoder -> 400 ReLU units -> 784(=28x28) output units.
+        
+    The vae looks like this:
+    VAE(
+  (fc1): Linear(in_features=784, out_features=400, bias=True) # 784 input units = 28x28
+  These 784 units project to two sets of 400 RELU units 
+  These 400 ReLU units project to two sets of 20 linear units
+      set1 represents Gaussian means
+      set2 represents Gaussian variances
+  (relu): ReLU()
+  (fc21): Linear(in_features=400, out_features=20, bias=True)
+  (fc22): Linear(in_features=400, out_features=20, bias=True)
+  Each sample from the 20 univariate Gaussians provides 20 scalars z represented by 20 linear units
+  These 20 linear units are the input to the decoder.
+  (fc3): Linear(in_features=20, out_features=400, bias=True)
+  These 20 linear units project to 400 ReLU units, which project to 784 output units.
+  (fc4): Linear(in_features=400, out_features=784, bias=True)
+  (sigmoid): Sigmoid()
+)
 """
 from __future__ import print_function
 import argparse
@@ -17,25 +42,18 @@ from torch import nn, optim
 from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
-
 import matplotlib.pyplot as plt
 from torch.autograd import Variable
 
 ########## set parameter values ##########
 
-# connections through the autoencoder bottleneck
-# in the pytorch VAE example, this is 20
-ZDIMS = 20
+ZDIMS = 20 # number of latent variables 
 
 BATCH_SIZE = 128
 
 numepochs = 2
 
-train_losses = []
-BCE=0.0
-KLD=0.0
-Lencode_losses = []
-Ldecode_losses = []
+train_losses = [] # record of loss function values for plotting.
 
 
 ########## set parser ##########
@@ -92,11 +110,10 @@ class VAE(nn.Module):
         # 28 x 28 pixels = 784 input pixels, 400 outputs
         self.fc1 = nn.Linear(784, 400)
         # rectified linear unit layer from 400 to 400
-        # max(0, x)
         self.relu = nn.ReLU()
         self.fc21 = nn.Linear(400, ZDIMS)  # mu layer
         self.fc22 = nn.Linear(400, ZDIMS)  # logvariance layer
-        # this last layer bottlenecks through ZDIMS connections
+        # this last layer is the bottleneck of ZDIMS=20 connections
         
        # DECODER
         # from bottleneck to hidden 400
@@ -106,7 +123,6 @@ class VAE(nn.Module):
         self.sigmoid = nn.Sigmoid()
         
     def encode(self, x):
-        
         h1 = F.relu(self.fc1(x))
         return self.fc21(h1), self.fc22(h1)
 
@@ -140,7 +156,7 @@ class VAE(nn.Module):
         
         if self.training:
             std = torch.exp(0.5*logvar)
-             # type: Variable
+            # type: Variable
             # - std.data is the [128,ZDIMS] tensor that is wrapped by std
             # - so eps is [128,ZDIMS] with all elements drawn from a mean 0
             #   and stddev 1 normal distribution that is 128 samples
@@ -189,7 +205,7 @@ def loss_function(recon_x, x, mu, logvar):
     # 0.5 * sum(1 + log(sigma^2) - mu^2 - sigma^2)
     KLD = 0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
     
-    # JVS Kingma's repo = https://github.com/dpkingma/examples/blob/master/vae/main.py
+    # JVS: Kingma's repo = https://github.com/dpkingma/examples/blob/master/vae/main.py
     # BCE tries to make our reconstruction as accurate as possible
     # KLD tries to push the distributions as close as possible to unit Gaussian
     
@@ -198,8 +214,9 @@ def loss_function(recon_x, x, mu, logvar):
     return loss
 
 def train(epoch):
-    fig = plt.figure(9)
-    plt.clf()
+    
+    fig = plt.figure(1)
+    plt.clf() # clear figure 
     ax=fig.add_subplot(111)
     ax.set_xlabel('Batch number')
     ax.set_ylabel('minus ELBO')
@@ -271,7 +288,7 @@ if __name__ == "__main__":
             save_image(sample.view(64, 1, 28, 28),
                        'results/sample_' + str(epoch) + '.png')
                 
-            # JVS plot feature of unit in 1st hidden layer
+            # JVS plot feature (weight vector) of unit in 1st hidden layer
             fig, axes = plt.subplots(4, 4)
             fig.subplots_adjust(left=None, bottom=None, 
                                 right=None, top=None, 
