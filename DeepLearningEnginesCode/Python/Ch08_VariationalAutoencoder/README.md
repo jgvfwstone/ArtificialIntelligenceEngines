@@ -2,7 +2,7 @@
 
 This is an improved implementation of the paper [Stochastic Gradient VB and the
 Variational Auto-Encoder](http://arxiv.org/abs/1312.6114) by Kingma and Welling.
-It uses ReLUs and the adam optimizer, instead of sigmoids and adagrad. These changes make the network converge much faster.
+It uses ReLUs and the adam optimizer, instead of sigmoids and adagrad. These changes make the network converge much faster. Changes to Kingma's code by Xingdong Zuo.
 
 JVS added graph of ELBO during training, plus reconstructed images ater training.
 
