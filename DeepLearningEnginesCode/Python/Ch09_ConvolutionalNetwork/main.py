@@ -1,3 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Chapter 9: Deep Backprop Network: 
+Convolutional backprop network trained on MNIST images of digits.
+
+Github directory: https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch09_ConvolutionalNetwork
+Author: Various
+Date created:
+License: https://github.com/pytorch/examples/blob/master/LICENSE
+Original Source: https://github.com/pytorch/examples/blob/master/mnist
+Description: Convolutional backprop network trained to recogise digits 0-9 from the MNIST data set.
+After 10 epochs:
+    Test set: Average loss: 0.0319, Accuracy: 9898/10000 (99%)
+"""
+
 from __future__ import print_function
 import argparse
 import torch
@@ -6,9 +22,10 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 
+########## define classes ##########
 
 class Net(nn.Module):
-    def __init__(self):
+    def __init__(self): # see https://pytorch.org/docs/stable/nn.html?highlight=conv2d#torch.nn.Conv2d
         super(Net, self).__init__()
         self.conv1 = nn.Conv2d(1, 20, 5, 1)
         self.conv2 = nn.Conv2d(20, 50, 5, 1)
@@ -24,7 +41,9 @@ class Net(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
-    
+
+########## define functions ##########
+
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
@@ -58,28 +77,41 @@ def test(args, model, device, test_loader):
         100. * correct / len(test_loader.dataset)))
 
 def main():
+    numepochs = 2;
+    batchsize = 64
+    
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
-    parser.add_argument('--batch-size', type=int, default=64, metavar='N',
+    
+    parser.add_argument('--batch-size', type=int, default=batchsize, metavar='N',
                         help='input batch size for training (default: 64)')
+    
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=10, metavar='N',
+    
+    parser.add_argument('--epochs', type=int, default=numepochs, metavar='N',
                         help='number of epochs to train (default: 10)')
+    
     parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
                         help='learning rate (default: 0.01)')
+    
     parser.add_argument('--momentum', type=float, default=0.5, metavar='M',
                         help='SGD momentum (default: 0.5)')
+    
     parser.add_argument('--no-cuda', action='store_true', default=False,
                         help='disables CUDA training')
+    
     parser.add_argument('--seed', type=int, default=1, metavar='S',
                         help='random seed (default: 1)')
+    
     parser.add_argument('--log-interval', type=int, default=10, metavar='N',
                         help='how many batches to wait before logging training status')
     
     parser.add_argument('--save-model', action='store_true', default=False,
                         help='For Saving the current Model')
+    
     args = parser.parse_args()
+    
     use_cuda = not args.no_cuda and torch.cuda.is_available()
 
     torch.manual_seed(args.seed)
@@ -101,7 +133,6 @@ def main():
                        ])),
         batch_size=args.test_batch_size, shuffle=True, **kwargs)
 
-
     model = Net().to(device)
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum)
 
@@ -114,3 +145,5 @@ def main():
         
 if __name__ == '__main__':
     main()
+
+########## The End ##########
