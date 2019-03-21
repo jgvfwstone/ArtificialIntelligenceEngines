@@ -1,4 +1,4 @@
-# Chapter 5: Hopfield Nets
+# Chapter 7: Restricted Boltzmann Machine (RBM) 
 
 > **Author:** [Gabriel Bianconi](http://www.gabrielbianconi.com/)
 
