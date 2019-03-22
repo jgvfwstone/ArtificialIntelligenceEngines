@@ -3,7 +3,7 @@
 THIS IS A DRAFT.
  	James V Stone
 
-The online code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
+The online PYTHON code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
 
 A particularly insightful PyTorch tutorial can be found here:
 	https://pytorch.org/tutorials/beginner/nn_tutorial.html
