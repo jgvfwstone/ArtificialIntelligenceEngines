@@ -1,6 +1,6 @@
 
 # Chapter 9: Reinforcement Learning
 
-**Author**: `Adam Paszke <https://github.com/apaszke>`_
+**Author**: 
 
 Run code using main.py.
