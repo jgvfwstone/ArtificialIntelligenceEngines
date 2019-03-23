@@ -9,14 +9,12 @@ A PyTorch tutorial can be found here:
 and
 	https://github.com/pytorch/examples/
 
-**Chapter 2: Linear Associative Network**
-https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork
+**[Chapter 2: Linear Associative Network](https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork)**
 
-**Chapter 3: Perceptron** 
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
+**[Chapter 3: Perceptron](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron)**
 
-**Chapter 4: The Backpropagation Algorithm**
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork
+**[Chapter 4: The Backpropagation Algorithm]
+(https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork)
 
 **Chapter 5: Hopfield Net**
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
