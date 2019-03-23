@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Feb 25 21:13:01 2019
-@author: JimStone
+Linear associative net, adapted from backprop network code by Suart Wilson.
+Author: Stuart Wilson, modified by JVStone (reproduced with permission).
 """
-#  Linear associative net, adapted from backprop network code by Suart Wilson.
 
 import numpy as np
 # use pylab for ploting.
