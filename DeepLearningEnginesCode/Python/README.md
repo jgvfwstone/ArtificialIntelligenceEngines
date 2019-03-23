@@ -13,8 +13,7 @@ and
 
 **[Chapter 3: Perceptron](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron)**
 
-**[Chapter 4: The Backpropagation Algorithm]
-(https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork)
+**[Chapter 4: The Backpropagation Algorithm](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork)**
 
 **[Chapter 5: Hopfield Net](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet)**
 
