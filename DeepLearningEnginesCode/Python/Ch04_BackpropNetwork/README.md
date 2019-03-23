@@ -1,8 +1,8 @@
 # Chapter 4: The Backpropagation Algorithm
 
-Run code using main.py.
-
-For details, see
-https://github.com/jgvfwstone/DeepLearningEngines/blob/master/DeepLearningEnginesCode/Python/README.md
-
- 
+* Run code using main.py.
+* Author: Sunil Ray, modified by JVS.
+* Date created: March 2017
+* License: None, copied with permission from the author.
+* Original Source: https://www.analyticsvidhya.com/blog/2017/05/neural-network-from-scratch-in-python-and-r/
+* Description:  A three layer backprop network with 2 input units, 2 hidden units and 1 output unit that learns the exclusive-OR (XOR) problem.
