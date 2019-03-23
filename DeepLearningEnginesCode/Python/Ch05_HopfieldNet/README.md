@@ -1,7 +1,8 @@
 # Chapter 5: Hopfield Nets
 
-Run code using main.py.
-
-For details, see
-https://github.com/jgvfwstone/DeepLearningEngines/blob/master/DeepLearningEnginesCode/Python/README.md
-
+* Run code using main.py.
+* Author: Tom Stafford
+* Date created: 2016
+* License: MIT
+* Original Source: https://github.com/tomstafford/emerge/blob/master/lecture4.ipynb
+* Description: Learns binary images. Recalls perfect versions from noisy input images.
