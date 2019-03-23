@@ -6,5 +6,5 @@
 * License: None, copied with permission from the author.
 * Original Source: https://www.analyticsvidhya.com/blog/2017/05/neural-network-from-scratch-in-python-and-r/
 * Description:  A three layer backprop network with 2 input units, 2 hidden units and 1 output unit that learns the exclusive-OR (XOR) problem.
-For a really simple example of how to use Pytorch to make a three layer backprop network, see 
+* For a simple example of how to use Pytorch to make a three layer backprop network, see 
 	https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html
