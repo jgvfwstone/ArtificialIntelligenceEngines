@@ -1,6 +1,6 @@
 # Code For Artificial Intelligence Engines Book
 
-Author:	James V Stone
+**Author:	James V Stone
 
 This PYTHON code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
 
@@ -33,4 +33,4 @@ https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEngine
 **Chapter 10: Reinforcement Learning**
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
 
-Notes on installing Python/Pytorch: https://github.com/jgvfwstone/ArtificialIntelligenceEngines/blob/master/DeepLearningEnginesCode/Python/howToGetPytorch.md
+**Notes on installing Python/Pytorch: https://github.com/jgvfwstone/ArtificialIntelligenceEngines/blob/master/DeepLearningEnginesCode/Python/howToGetPytorch.md
