@@ -16,19 +16,14 @@ and
 **[Chapter 4: The Backpropagation Algorithm]
 (https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork)
 
-**Chapter 5: Hopfield Net**
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
+**[Chapter 5: Hopfield Net](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet)**
 
-**Chapter 7: Restricted Boltzmann Machine**
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
+**[Chapter 7: Restricted Boltzmann Machine](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine)**
 
-**Chapter 8: Variational Autoencoder**
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder
+**[Chapter 8: Variational Autoencoder](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder)**
 
-**Chapter 9: Convolutional Backprop Network**
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch09_ConvolutionalNetwork
+**[Chapter 9: Convolutional Backprop Network](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch09_ConvolutionalNetwork)**
 
-**Chapter 10: Reinforcement Learning**
-https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning
+**[Chapter 10: Reinforcement Learning](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch10_ReinforcementLearning)**
 
 **Notes on installing Python/Pytorch:** https://github.com/jgvfwstone/ArtificialIntelligenceEngines/blob/master/DeepLearningEnginesCode/Python/howToGetPytorch.md
