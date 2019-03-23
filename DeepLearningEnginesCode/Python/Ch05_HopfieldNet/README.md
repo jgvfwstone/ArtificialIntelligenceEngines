@@ -1,4 +1,4 @@
-# Chapter 5: Hopfield Nets
+# Chapter 5: Hopfield Net
 
 * Run code using main.py.
 * Author: Tom Stafford
