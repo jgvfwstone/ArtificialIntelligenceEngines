@@ -24,9 +24,7 @@ However, to download a single file
 3) use the browser "save as ..." menu to save the file to your computer. 
 
 **How To ...**
-There is help file within each directory, for example:
-
-https://github.com/jgvfwstone/ArtificialIntellgenceEngines/blob/master/DeepLearningEnginesCode/Python/README.md
+There is a README file within each directory. 
 
 **System Requirements**
 
