@@ -9,22 +9,22 @@ A PyTorch tutorial can be found here:
 and
 	https://github.com/pytorch/examples/
 
-**Chapter 2: Linear Associative Networks**
+**Chapter 2: Linear Associative Network**
 https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork
 
-**Chapter 3: Perceptrons** 
+**Chapter 3: Perceptron** 
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron
 
 **Chapter 4: The Backpropagation Algorithm**
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch04_BackpropNetwork
 
-**Chapter 5: Hopfield Nets**
+**Chapter 5: Hopfield Net**
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch05_HopfieldNet
 
-**Chapter 7: Restricted Boltzmann Machines**
+**Chapter 7: Restricted Boltzmann Machine**
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch07_RestrictedBoltzmannMachine
 
-**Chapter 8: Variational Autoencoders**
+**Chapter 8: Variational Autoencoder**
 https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch08_VariationalAutoencoder
 
 **Chapter 9: Convolutional Backprop Network**
