@@ -3,7 +3,7 @@
 * To run code, use main.py
 * Author: Gabriel Bianconi 
 * Date created: 2017
-* License: MIT License
+* License: MIT License, reproduced with permission
 * Original Source: https://github.com/GabrielBianconi/pytorch-rbm
 * Description: Applies a single RBM to the MNIST dataset of images of digits from 0-9. The trained model uses a SciPy-based logistic regression to classify outputs. It achieves 92.8% classification accuracy on the test set of images.
 * Notes from the author (Gabriel Bianconi):
