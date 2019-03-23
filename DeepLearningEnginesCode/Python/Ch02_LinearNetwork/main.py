@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 Linear associative net, adapted from backprop network code by Suart Wilson.
-Author: Stuart Wilson, modified by JVStone (reproduced with permission).
+* Author: Stuart Wilson, modified by JVStone.
+* Date created: 2016.
+* Original Source: Personal communication.
+* License: MIT.
+* Description: 
+* Network: Linear associative  network learns to map 4 2D input vectors to 4 scalars, using gradient descent.
 """
 
 import numpy as np
