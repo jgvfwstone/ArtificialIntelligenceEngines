@@ -9,9 +9,6 @@ A PyTorch tutorial can be found here:
 and
 	https://github.com/pytorch/examples/
 
-For a really simple example, see 
-	https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html
-
 **Chapter 2: Linear Associative Networks**
 https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork
 
