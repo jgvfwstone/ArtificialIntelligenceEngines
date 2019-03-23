@@ -1,7 +1,5 @@
 # Artificial Intelligence Engines
 
-**NOTE: THIS WHOLE REPOSITORY IS A DRAFT, which will be completed before the book is published.**
-
 Computer code collated from various sources for use with the book: 
 
 [Artificial Intelligence Engines: A Tutorial Introduction to the Mathematics of Deep Learning](https://jim-stone.staff.shef.ac.uk/AIEngines/)
