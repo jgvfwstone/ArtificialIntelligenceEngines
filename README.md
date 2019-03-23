@@ -11,15 +11,9 @@ Computer code collated from various sources for use with the book:
 This file is: https://github.com/jgvfwstone/ArtificialIntelligenceEngines
 
 Note that the book is principally about the mathematics of deep learning.
-This repository is intended to provide 'taster' code, rather than an exercise in how to program deep learning networks. Most of this code is in Python, with some code duplicated in MatLab. Because this code has been collated from different sources, the coding style varies between examples.
+This repository is intended to provide 'taster' code, rather than an exercise in how to program deep learning networks. Because this code has been collated from different sources, the coding style varies between examples.
 
 Each example has been reproduced with permission from the author.
-
-**System Requirements**
-
-Each example has been tested on a mac (System Version:	OS X 10.11.3), MacBook Air 1.6GHz.
-Python examples have been tested using the Spyder (3.3.2) python application with Python 3.7.0.
-MatLab examples have been tested using MatLab version 9.0.0.341360 (R2016a); no toolboxes are required.
 
 **Downloading Single Files**
 
@@ -33,3 +27,10 @@ However, to download a single file
 There is help file within each directory, for example:
 
 https://github.com/jgvfwstone/ArtificialIntellgenceEngines/blob/master/DeepLearningEnginesCode/Python/README.md
+
+**System Requirements**
+
+Each example has been tested on a mac (System Version:	OS X 10.11.3), MacBook Air 1.6GHz.
+Python examples have been tested using the Spyder (3.3.2) python application with Python 3.7.0.
+MatLab examples have been tested using MatLab version 9.0.0.341360 (R2016a); no toolboxes are required.
+
