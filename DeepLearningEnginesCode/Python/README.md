@@ -1,20 +1,16 @@
 # Code For Artificial Intelligence Engines Book
 
-THIS IS A DRAFT.
- 	James V Stone
+Author:	James V Stone
 
-The online PYTHON code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
+This PYTHON code implements minimal examples, and is intended to demonstrate the basic principles that underpin each neural network. 
 
-A particularly insightful PyTorch tutorial can be found here:
+A PyTorch tutorial can be found here:
 	https://pytorch.org/tutorials/beginner/nn_tutorial.html
 and
 	https://github.com/pytorch/examples/
 
 For a really simple example, see 
 	https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html
-
-The following is a list of online examples at
-	https://github.com/jgvfwstone/DeepLearningEngines
 
 **Chapter 2: Linear Associative Networks**
 https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork
