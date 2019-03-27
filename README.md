@@ -28,5 +28,3 @@ There is a README file within each directory.
 
 Each example has been tested on a mac (System Version:	OS X 10.11.3), MacBook Air 1.6GHz.
 Python examples have been tested using the Spyder (3.3.2) python application with Python 3.7.0.
-MatLab examples have been tested using MatLab version 9.0.0.341360 (R2016a); no toolboxes are required.
-
