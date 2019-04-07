@@ -8,4 +8,4 @@
 * Description:  A three layer backprop network with 2 input units, 2 hidden units and 1 output unit that learns the exclusive-OR (XOR) problem.
 * For a simple example of how to use Pytorch to make a three layer backprop network, see 
 	https://pytorch.org/tutorials/beginner/examples_nn/two_layer_net_nn.html
-* For testing backprop on the MNIST data set of digits using the sklearn package, see https://github.com/scikit-learn/scikit-learn/blob/master/benchmarks/bench_mnist.py
+* For testing backprop on the MNIST data set of digits using the sklearn (scikit-learn) package, see https://github.com/scikit-learn/scikit-learn/blob/master/benchmarks/bench_mnist.py
