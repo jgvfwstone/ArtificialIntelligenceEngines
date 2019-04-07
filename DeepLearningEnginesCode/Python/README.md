@@ -9,6 +9,9 @@ A PyTorch tutorial can be found here:
 and
 	https://github.com/pytorch/examples/
 
+Alternatively, examples based on the scikit-learn package can be found at
+	https://github.com/scikit-learn/scikit-learn
+
 **[Chapter 2: Linear Associative Network](https://github.com/jgvfwstone/ArtificialIntellgenceEngines/tree/master/DeepLearningEnginesCode/Python/Ch02_LinearNetwork)**
 
 **[Chapter 3: Perceptron](https://github.com/jgvfwstone/DeepLearningEngines/tree/master/DeepLearningEnginesCode/Python/Ch03_Perceptron)**
