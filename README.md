@@ -2,7 +2,7 @@
 
 Computer code collated from various sources for use with the book: 
 
-[Artificial Intelligence Engines: A Tutorial Introduction to the Mathematics of Deep Learning](https://jim-stone.staff.shef.ac.uk/AIEngines/)
+[Artificial Intelligence Engines: A Tutorial Introduction to the Mathematics of Deep Learning](https://jamesstone.sites.sheffield.ac.uk/books/artificial-intelligence-engines)
  
 **by James V Stone**
 
