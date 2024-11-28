@@ -1,7 +1,7 @@
 
 # Chapter 9: Reinforcement Learning
 
-* Requirements: Download the package gym before use.
+* Requirements: Download the package gym before use (ie pip install gym).
 * Run code using main.py
 * Author: Anirudh Topiwala
 * Date created: 2017
